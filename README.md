@@ -52,6 +52,12 @@ npm run build
 - `src-tauri/target/release/bundle/dmg/Fate_*.dmg`
 - Windows 包位于 `src-tauri/target/release/bundle/` 下对应的 Windows 子目录中
 
+## macOS自签名
+
+```
+sudo xattr -rd com.apple.quarantine /Applications/Fate.app
+```
+
 ## 环境
 
 - Node.js 24+

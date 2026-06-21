@@ -75,17 +75,38 @@ jobs:
           import os
 
           bundle_dir = Path("src-tauri/target/release/bundle")
-          if not bundle_dir.exists():
-              raise SystemExit("Tauri bundle directory was not created")
-
           out_dir = Path("release-assets")
           out_dir.mkdir(exist_ok=True)
           asset = out_dir / f"{os.environ['ASSET_NAME']}.zip"
+          release_dir = Path("src-tauri/target/release")
+
+          files = []
+          if bundle_dir.exists():
+              files = [
+                  (path, path.relative_to(bundle_dir))
+                  for path in bundle_dir.rglob("*")
+                  if path.is_file()
+              ]
+          elif os.environ.get("RUNNER_OS") == "Windows":
+              exe_files = sorted(release_dir.glob("*.exe"))
+              dll_files = sorted(release_dir.glob("*.dll"))
+              resources_dir = release_dir / "resources"
+
+              files = [(path, "Fate.exe" if path.name.lower() == "fate.exe" else path.name) for path in exe_files]
+              files += [(path, path.name) for path in dll_files]
+              if resources_dir.exists():
+                  files += [
+                      (path, path.relative_to(release_dir))
+                      for path in resources_dir.rglob("*")
+                      if path.is_file()
+                  ]
+
+          if not files:
+              raise SystemExit("No Tauri bundle or portable Windows executable was created")
 
           with ZipFile(asset, "w", ZIP_DEFLATED) as zf:
-              for path in bundle_dir.rglob("*"):
-                  if path.is_file():
-                      zf.write(path, path.relative_to(bundle_dir))
+              for path, arcname in files:
+                  zf.write(path, arcname)
 
           print(asset)
           PY
