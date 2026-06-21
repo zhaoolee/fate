@@ -1,0 +1,26 @@
+{
+  "title": "乙女修仙塔罗生成提示词",
+  "deckName": "乙女修仙塔罗",
+  "prompt": "你是一个资深游戏美术设定师、塔罗牌研究者和产品设计师。请帮我设计一套完整的 78 张塔罗牌卡组，基于 Rider-Waite-Smith 的标准结构，但不要复制任何现有卡组的具体画面、构图或受版权保护的视觉表达。目标：生成一套可商业化的原创塔罗牌；风格统一；适合印刷实体卡牌；每张牌都有明确符号、人物、场景、色彩、构图说明；每张牌都能转成 AI 绘图 prompt。卡组主题：「乙女修仙塔罗」。关键词：Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting。人物规则：所有人物都使用有仙气的女性修仙者，飘逸道袍、轻盈仙气、原创发饰，日系乙女幻想审美，不出现男性化人物。请输出：1. 整体美术风格说明；2. 色彩系统；3. 卡牌尺寸建议，比例 2:3 或 70mm x 120mm；4. 78 张牌的完整清单；5. 每张牌包含：id、英文名、中文名、类型：Major Arcana / Minor Arcana、suit：Wands / Cups / Swords / Pentacles，如果是大阿尔卡那则为空、upright meaning、reversed meaning、必须出现的视觉符号、构图描述、色彩建议、image prompt、negative prompt。约束：不要直接模仿 Rider-Waite-Smith、Thoth、Modern Witch、Wild Unknown、Light Seer’s 等现有卡组的具体画面。可以继承传统塔罗的抽象牌意和通用象征，但必须重新设计构图。所有人物、服装、法器、建筑、纹样都要原创。每张牌必须保持同一套世界观。image prompt 必须适合直接输入到图像生成模型。每张图禁止出现文字、牌名、边框和编号；这些后期由排版程序添加。输出 JSON 格式。",
+  "outputSchema": {
+    "artDirection": "string",
+    "colorSystem": "string",
+    "cardSize": "string",
+    "cards": [
+      {
+        "id": "string",
+        "englishName": "string",
+        "chineseName": "string",
+        "type": "Major Arcana | Minor Arcana",
+        "suit": "Wands | Cups | Swords | Pentacles | empty string",
+        "uprightMeaning": "string",
+        "reversedMeaning": "string",
+        "visualSymbols": ["string"],
+        "composition": "string",
+        "colorSuggestion": "string",
+        "imagePrompt": "string",
+        "negativePrompt": "string"
+      }
+    ]
+  }
+}

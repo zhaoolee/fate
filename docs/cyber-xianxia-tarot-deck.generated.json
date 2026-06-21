@@ -1,0 +1,1490 @@
+{
+  "artDirection": "Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting",
+  "figureRule": "All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters.",
+  "colorSystem": "pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray",
+  "cardSize": "2:3 vertical tarot illustration, recommended 70mm x 120mm for print",
+  "cards": [
+    {
+      "id": "major-00",
+      "englishName": "The Fool",
+      "chineseName": "愚者",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "新旅程、天真、信任未知",
+      "reversedMeaning": "鲁莽、迷失、轻率开始",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "年轻修士站在悬浮山门边缘，脚下是发光云海，身旁漂浮一枚未激活的玉符",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Fool\" (愚者). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 年轻修士站在悬浮山门边缘，脚下是发光云海，身旁漂浮一枚未激活的玉符. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-01",
+      "englishName": "The Magician",
+      "chineseName": "魔术师",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "意志、显化、资源整合",
+      "reversedMeaning": "操控、虚张声势、能量失衡",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "术士在霓虹法坛前将符箓、剑、杯、币四种法器连入星图阵列",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Magician\" (魔术师). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 术士在霓虹法坛前将符箓、剑、杯、币四种法器连入星图阵列. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-02",
+      "englishName": "The High Priestess",
+      "chineseName": "女祭司",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "直觉、隐秘知识、内在智慧",
+      "reversedMeaning": "秘密遮蔽、直觉失准、沉默压抑",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "银发女祭司坐在量子藏经阁门前，身后两根黑白数据玉柱缓慢发光",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The High Priestess\" (女祭司). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 银发女祭司坐在量子藏经阁门前，身后两根黑白数据玉柱缓慢发光. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-03",
+      "englishName": "The Empress",
+      "chineseName": "女皇",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "滋养、创造、丰盛",
+      "reversedMeaning": "过度依附、创造停滞、消耗",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "仙庭女主在机械灵田中抚育发光灵植，远处古楼与生态舱交错",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Empress\" (女皇). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 仙庭女主在机械灵田中抚育发光灵植，远处古楼与生态舱交错. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-04",
+      "englishName": "The Emperor",
+      "chineseName": "皇帝",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "秩序、结构、责任",
+      "reversedMeaning": "僵化、控制欲、权威滥用",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "玄甲帝君坐在悬浮龙椅上，背后是环形星城和律令符文",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Emperor\" (皇帝). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 玄甲帝君坐在悬浮龙椅上，背后是环形星城和律令符文. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-05",
+      "englishName": "The Hierophant",
+      "chineseName": "教皇",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "传承、仪式、群体信念",
+      "reversedMeaning": "教条、盲从、旧规束缚",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "宗门导师在全息道观内授箓，弟子们围绕光阵静坐",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Hierophant\" (教皇). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 宗门导师在全息道观内授箓，弟子们围绕光阵静坐. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-06",
+      "englishName": "The Lovers",
+      "chineseName": "恋人",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "选择、联结、价值一致",
+      "reversedMeaning": "犹豫、失衡关系、诱惑",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "两位修行者在双生飞桥上交换发光心印，天际有阴阳星核",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Lovers\" (恋人). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 两位修行者在双生飞桥上交换发光心印，天际有阴阳星核. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-07",
+      "englishName": "The Chariot",
+      "chineseName": "战车",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "推进、胜利、自律",
+      "reversedMeaning": "失控、急躁、方向冲突",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "修士驾驶青铜机甲战车穿过霓虹云路，两侧灵兽无人机拉开阵势",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Chariot\" (战车). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 修士驾驶青铜机甲战车穿过霓虹云路，两侧灵兽无人机拉开阵势. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-08",
+      "englishName": "Strength",
+      "chineseName": "力量",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "温柔的勇气、耐心、驯服本能",
+      "reversedMeaning": "压抑、胆怯、失去自控",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "女武修以手心金光安抚机械白虎，背景是静默雷池",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Strength\" (力量). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 女武修以手心金光安抚机械白虎，背景是静默雷池. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-09",
+      "englishName": "The Hermit",
+      "chineseName": "隐者",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "独处、寻找真理、内省",
+      "reversedMeaning": "孤立、逃避、迷惘",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "老修士提着量子灵灯行走在雪山天梯，脚下电路像星河",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Hermit\" (隐者). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 老修士提着量子灵灯行走在雪山天梯，脚下电路像星河. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-10",
+      "englishName": "Wheel of Fortune",
+      "chineseName": "命运之轮",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "周期、转机、因果",
+      "reversedMeaning": "停滞、抗拒变化、反复",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "巨大的因果齿轮悬在云端，符箓和星轨绕轮旋转",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Wheel of Fortune\" (命运之轮). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 巨大的因果齿轮悬在云端，符箓和星轨绕轮旋转. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-11",
+      "englishName": "Justice",
+      "chineseName": "正义",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "平衡、公正、因果清算",
+      "reversedMeaning": "偏见、不诚实、失衡裁决",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "执法仙官手持光剑与玉衡，脚下是镜面审判法阵",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Justice\" (正义). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 执法仙官手持光剑与玉衡，脚下是镜面审判法阵. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-12",
+      "englishName": "The Hanged Man",
+      "chineseName": "倒吊人",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "暂停、换位视角、献身",
+      "reversedMeaning": "拖延、僵持、无谓牺牲",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "修士倒悬于反重力桃树下，眉心亮起新的星图视角",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Hanged Man\" (倒吊人). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 修士倒悬于反重力桃树下，眉心亮起新的星图视角. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-13",
+      "englishName": "Death",
+      "chineseName": "死神",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "结束、转化、重生",
+      "reversedMeaning": "抗拒结束、迟滞蜕变、恐惧改变",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "黑袍灵械使穿过废弃仙城，枯木枝头长出霓虹新芽",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Death\" (死神). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 黑袍灵械使穿过废弃仙城，枯木枝头长出霓虹新芽. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-14",
+      "englishName": "Temperance",
+      "chineseName": "节制",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "调和、疗愈、流动",
+      "reversedMeaning": "过度、失衡、急于求成",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "炼丹师在两只悬浮玉盏间调和金蓝灵液，身后水火双阵相融",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Temperance\" (节制). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 炼丹师在两只悬浮玉盏间调和金蓝灵液，身后水火双阵相融. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-15",
+      "englishName": "The Devil",
+      "chineseName": "恶魔",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "执念、诱惑、束缚",
+      "reversedMeaning": "看见枷锁、解除依赖、自我释放",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "霓虹魔市里巨大的欲望算法化作妖影，两名修士被发光契约线牵住",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Devil\" (恶魔). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 霓虹魔市里巨大的欲望算法化作妖影，两名修士被发光契约线牵住. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-16",
+      "englishName": "The Tower",
+      "chineseName": "高塔",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "突变、崩解、真相击穿",
+      "reversedMeaning": "延迟崩塌、害怕破局、余震",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "通天数据塔被雷符击裂，瓦片与服务器碎片在空中飞散",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Tower\" (高塔). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 通天数据塔被雷符击裂，瓦片与服务器碎片在空中飞散. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-17",
+      "englishName": "The Star",
+      "chineseName": "星星",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "希望、灵感、宇宙祝福",
+      "reversedMeaning": "失望、信念低落、灵感干涸",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "少女在天河观星台倾倒星砂，远处机械莲花盛开",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Star\" (星星). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 少女在天河观星台倾倒星砂，远处机械莲花盛开. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-18",
+      "englishName": "The Moon",
+      "chineseName": "月亮",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "梦境、潜意识、迷雾",
+      "reversedMeaning": "幻象消散、恐惧浮现、误判",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "两座月门倒映在灵潮中，机械狐影和纸鹤穿过雾色光路",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Moon\" (月亮). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 两座月门倒映在灵潮中，机械狐影和纸鹤穿过雾色光路. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-19",
+      "englishName": "The Sun",
+      "chineseName": "太阳",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "喜悦、清晰、生命力",
+      "reversedMeaning": "过度自信、短暂阴影、能量耗竭",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "金色日轮照耀云上仙城，孩童修士骑着光翼麒麟掠过庭院",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The Sun\" (太阳). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 金色日轮照耀云上仙城，孩童修士骑着光翼麒麟掠过庭院. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-20",
+      "englishName": "Judgement",
+      "chineseName": "审判",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "觉醒、召唤、更新",
+      "reversedMeaning": "逃避召唤、自责、未完成的清算",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "天穹传来星舰法螺声，沉睡修士从莲形休眠舱中醒来",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Judgement\" (审判). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 天穹传来星舰法螺声，沉睡修士从莲形休眠舱中醒来. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "major-21",
+      "englishName": "The World",
+      "chineseName": "世界",
+      "type": "Major Arcana",
+      "suit": "",
+      "uprightMeaning": "完成、整合、圆满",
+      "reversedMeaning": "未竟之事、缺口、循环未闭",
+      "visualSymbols": [
+        "neon talismans",
+        "ancient Chinese architecture",
+        "cosmic machinery",
+        "spiritual cultivation aura"
+      ],
+      "composition": "修士立于环形宇宙法阵中央，四象机械神兽环绕守护",
+      "colorSuggestion": "ink black, talisman gold, jade green, electric cyan, controlled magenta highlights",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"The World\" (世界). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Major Arcana, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: 修士立于环形宇宙法阵中央，四象机械神兽环绕守护. Palette: pearl ivory, sakura pink, lavender mist, moonlight blue, jade green, champagne gold, soft cyan, warm blush, subtle ink gray. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-ace",
+      "englishName": "Ace of Wands",
+      "chineseName": "符杖一",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "new potential",
+      "reversedMeaning": "blocked beginning",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "single sacred object floating above an altar, vast negative space; focus on glowing wooden staff, thunder talismans, ember qi; express seed, pure potential, first spark through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ace of Wands\" (符杖一). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: single sacred object floating above an altar, vast negative space; focus on glowing wooden staff, thunder talismans, ember qi; express seed, pure potential, first spark through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-two",
+      "englishName": "Two of Wands",
+      "chineseName": "符杖二",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "balance and choice",
+      "reversedMeaning": "indecision or imbalance",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "two mirrored objects held in tension by a young cultivator; focus on glowing wooden staff, thunder talismans, ember qi; express choice, balance, first coordination through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Two of Wands\" (符杖二). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: two mirrored objects held in tension by a young cultivator; focus on glowing wooden staff, thunder talismans, ember qi; express choice, balance, first coordination through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-three",
+      "englishName": "Three of Wands",
+      "chineseName": "符杖三",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "collaboration and expansion",
+      "reversedMeaning": "scattered effort",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "three objects forming a triangular spell array with distant allies; focus on glowing wooden staff, thunder talismans, ember qi; express growth, collaboration, first result through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Three of Wands\" (符杖三). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: three objects forming a triangular spell array with distant allies; focus on glowing wooden staff, thunder talismans, ember qi; express growth, collaboration, first result through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-four",
+      "englishName": "Four of Wands",
+      "chineseName": "符杖四",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "stability and pause",
+      "reversedMeaning": "stagnation or restlessness",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "four objects anchoring a calm square courtyard ritual; focus on glowing wooden staff, thunder talismans, ember qi; express structure, pause, stable container through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Four of Wands\" (符杖四). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: four objects anchoring a calm square courtyard ritual; focus on glowing wooden staff, thunder talismans, ember qi; express structure, pause, stable container through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-five",
+      "englishName": "Five of Wands",
+      "chineseName": "符杖五",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "conflict and adjustment",
+      "reversedMeaning": "recovery after friction",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "five objects scattered through a tense neon training ground; focus on glowing wooden staff, thunder talismans, ember qi; express friction, challenge, disruption through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Five of Wands\" (符杖五). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: five objects scattered through a tense neon training ground; focus on glowing wooden staff, thunder talismans, ember qi; express friction, challenge, disruption through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-six",
+      "englishName": "Six of Wands",
+      "chineseName": "符杖六",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "support and return",
+      "reversedMeaning": "nostalgia or dependence",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "six objects guiding travelers through a restored old gate; focus on glowing wooden staff, thunder talismans, ember qi; express return, harmony, earned support through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Six of Wands\" (符杖六). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: six objects guiding travelers through a restored old gate; focus on glowing wooden staff, thunder talismans, ember qi; express return, harmony, earned support through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-seven",
+      "englishName": "Seven of Wands",
+      "chineseName": "符杖七",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "strategy and defense",
+      "reversedMeaning": "doubt or poor planning",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "seven objects arranged as defensive layers around a lone figure; focus on glowing wooden staff, thunder talismans, ember qi; express test, strategy, guarded progress through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Seven of Wands\" (符杖七). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: seven objects arranged as defensive layers around a lone figure; focus on glowing wooden staff, thunder talismans, ember qi; express test, strategy, guarded progress through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-eight",
+      "englishName": "Eight of Wands",
+      "chineseName": "符杖八",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "momentum and practice",
+      "reversedMeaning": "delay or rushed mistakes",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "eight objects moving in synchronized luminous trails; focus on glowing wooden staff, thunder talismans, ember qi; express momentum, practice, acceleration through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Eight of Wands\" (符杖八). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: eight objects moving in synchronized luminous trails; focus on glowing wooden staff, thunder talismans, ember qi; express momentum, practice, acceleration through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-nine",
+      "englishName": "Nine of Wands",
+      "chineseName": "符杖九",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "resilience and threshold",
+      "reversedMeaning": "fatigue or guarded fear",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "nine objects circling a tired but standing cultivator; focus on glowing wooden staff, thunder talismans, ember qi; express threshold, endurance, inner reserve through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Nine of Wands\" (符杖九). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: nine objects circling a tired but standing cultivator; focus on glowing wooden staff, thunder talismans, ember qi; express threshold, endurance, inner reserve through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-ten",
+      "englishName": "Ten of Wands",
+      "chineseName": "符杖十",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "completion and burden",
+      "reversedMeaning": "release or overload",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "ten objects forming a heavy luminous mandala over a city roof; focus on glowing wooden staff, thunder talismans, ember qi; express completion, load, culmination through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ten of Wands\" (符杖十). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: ten objects forming a heavy luminous mandala over a city roof; focus on glowing wooden staff, thunder talismans, ember qi; express completion, load, culmination through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-page",
+      "englishName": "Page of Wands",
+      "chineseName": "符杖侍者",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "study and first message",
+      "reversedMeaning": "immaturity or distraction",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "young apprentice discovering the suit object in a quiet workshop; focus on glowing wooden staff, thunder talismans, ember qi; express curiosity, message, apprentice mind through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Page of Wands\" (符杖侍者). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: young apprentice discovering the suit object in a quiet workshop; focus on glowing wooden staff, thunder talismans, ember qi; express curiosity, message, apprentice mind through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-knight",
+      "englishName": "Knight of Wands",
+      "chineseName": "符杖骑士",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "movement and pursuit",
+      "reversedMeaning": "recklessness or hesitation",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "mounted cultivator rushing through a neon cloud road with the suit object; focus on glowing wooden staff, thunder talismans, ember qi; express pursuit, movement, charged intent through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Knight of Wands\" (符杖骑士). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: mounted cultivator rushing through a neon cloud road with the suit object; focus on glowing wooden staff, thunder talismans, ember qi; express pursuit, movement, charged intent through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-queen",
+      "englishName": "Queen of Wands",
+      "chineseName": "符杖王后",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "inner mastery and care",
+      "reversedMeaning": "smothering or withdrawal",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "regal cultivator seated in a refined chamber, suit object orbiting gently; focus on glowing wooden staff, thunder talismans, ember qi; express mastery through receptivity, care, subtle command through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Queen of Wands\" (符杖王后). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: regal cultivator seated in a refined chamber, suit object orbiting gently; focus on glowing wooden staff, thunder talismans, ember qi; express mastery through receptivity, care, subtle command through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "wands-king",
+      "englishName": "King of Wands",
+      "chineseName": "符杖国王",
+      "type": "Minor Arcana",
+      "suit": "Wands",
+      "uprightMeaning": "outer mastery and responsibility",
+      "reversedMeaning": "rigidity or misuse of power",
+      "visualSymbols": [
+        "glowing wooden staff, thunder talismans, ember qi",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on glowing wooden staff, thunder talismans, ember qi; express mature authority, discipline, outer command through action, willpower, ignition, cultivation breakthrough",
+      "colorSuggestion": "ember orange, talisman gold, dark cedar, electric red",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"King of Wands\" (符杖国王). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Wands, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on glowing wooden staff, thunder talismans, ember qi; express mature authority, discipline, outer command through action, willpower, ignition, cultivation breakthrough. Palette: ember orange, talisman gold, dark cedar, electric red. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-ace",
+      "englishName": "Ace of Cups",
+      "chineseName": "灵杯一",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "new potential",
+      "reversedMeaning": "blocked beginning",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "single sacred object floating above an altar, vast negative space; focus on jade cup, liquid moonlight, healing water arrays; express seed, pure potential, first spark through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ace of Cups\" (灵杯一). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: single sacred object floating above an altar, vast negative space; focus on jade cup, liquid moonlight, healing water arrays; express seed, pure potential, first spark through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-two",
+      "englishName": "Two of Cups",
+      "chineseName": "灵杯二",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "balance and choice",
+      "reversedMeaning": "indecision or imbalance",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "two mirrored objects held in tension by a young cultivator; focus on jade cup, liquid moonlight, healing water arrays; express choice, balance, first coordination through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Two of Cups\" (灵杯二). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: two mirrored objects held in tension by a young cultivator; focus on jade cup, liquid moonlight, healing water arrays; express choice, balance, first coordination through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-three",
+      "englishName": "Three of Cups",
+      "chineseName": "灵杯三",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "collaboration and expansion",
+      "reversedMeaning": "scattered effort",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "three objects forming a triangular spell array with distant allies; focus on jade cup, liquid moonlight, healing water arrays; express growth, collaboration, first result through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Three of Cups\" (灵杯三). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: three objects forming a triangular spell array with distant allies; focus on jade cup, liquid moonlight, healing water arrays; express growth, collaboration, first result through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-four",
+      "englishName": "Four of Cups",
+      "chineseName": "灵杯四",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "stability and pause",
+      "reversedMeaning": "stagnation or restlessness",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "four objects anchoring a calm square courtyard ritual; focus on jade cup, liquid moonlight, healing water arrays; express structure, pause, stable container through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Four of Cups\" (灵杯四). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: four objects anchoring a calm square courtyard ritual; focus on jade cup, liquid moonlight, healing water arrays; express structure, pause, stable container through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-five",
+      "englishName": "Five of Cups",
+      "chineseName": "灵杯五",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "conflict and adjustment",
+      "reversedMeaning": "recovery after friction",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "five objects scattered through a tense neon training ground; focus on jade cup, liquid moonlight, healing water arrays; express friction, challenge, disruption through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Five of Cups\" (灵杯五). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: five objects scattered through a tense neon training ground; focus on jade cup, liquid moonlight, healing water arrays; express friction, challenge, disruption through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-six",
+      "englishName": "Six of Cups",
+      "chineseName": "灵杯六",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "support and return",
+      "reversedMeaning": "nostalgia or dependence",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "six objects guiding travelers through a restored old gate; focus on jade cup, liquid moonlight, healing water arrays; express return, harmony, earned support through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Six of Cups\" (灵杯六). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: six objects guiding travelers through a restored old gate; focus on jade cup, liquid moonlight, healing water arrays; express return, harmony, earned support through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-seven",
+      "englishName": "Seven of Cups",
+      "chineseName": "灵杯七",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "strategy and defense",
+      "reversedMeaning": "doubt or poor planning",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "seven objects arranged as defensive layers around a lone figure; focus on jade cup, liquid moonlight, healing water arrays; express test, strategy, guarded progress through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Seven of Cups\" (灵杯七). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: seven objects arranged as defensive layers around a lone figure; focus on jade cup, liquid moonlight, healing water arrays; express test, strategy, guarded progress through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-eight",
+      "englishName": "Eight of Cups",
+      "chineseName": "灵杯八",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "momentum and practice",
+      "reversedMeaning": "delay or rushed mistakes",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "eight objects moving in synchronized luminous trails; focus on jade cup, liquid moonlight, healing water arrays; express momentum, practice, acceleration through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Eight of Cups\" (灵杯八). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: eight objects moving in synchronized luminous trails; focus on jade cup, liquid moonlight, healing water arrays; express momentum, practice, acceleration through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-nine",
+      "englishName": "Nine of Cups",
+      "chineseName": "灵杯九",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "resilience and threshold",
+      "reversedMeaning": "fatigue or guarded fear",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "nine objects circling a tired but standing cultivator; focus on jade cup, liquid moonlight, healing water arrays; express threshold, endurance, inner reserve through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Nine of Cups\" (灵杯九). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: nine objects circling a tired but standing cultivator; focus on jade cup, liquid moonlight, healing water arrays; express threshold, endurance, inner reserve through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-ten",
+      "englishName": "Ten of Cups",
+      "chineseName": "灵杯十",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "completion and burden",
+      "reversedMeaning": "release or overload",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "ten objects forming a heavy luminous mandala over a city roof; focus on jade cup, liquid moonlight, healing water arrays; express completion, load, culmination through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ten of Cups\" (灵杯十). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: ten objects forming a heavy luminous mandala over a city roof; focus on jade cup, liquid moonlight, healing water arrays; express completion, load, culmination through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-page",
+      "englishName": "Page of Cups",
+      "chineseName": "灵杯侍者",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "study and first message",
+      "reversedMeaning": "immaturity or distraction",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "young apprentice discovering the suit object in a quiet workshop; focus on jade cup, liquid moonlight, healing water arrays; express curiosity, message, apprentice mind through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Page of Cups\" (灵杯侍者). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: young apprentice discovering the suit object in a quiet workshop; focus on jade cup, liquid moonlight, healing water arrays; express curiosity, message, apprentice mind through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-knight",
+      "englishName": "Knight of Cups",
+      "chineseName": "灵杯骑士",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "movement and pursuit",
+      "reversedMeaning": "recklessness or hesitation",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "mounted cultivator rushing through a neon cloud road with the suit object; focus on jade cup, liquid moonlight, healing water arrays; express pursuit, movement, charged intent through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Knight of Cups\" (灵杯骑士). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: mounted cultivator rushing through a neon cloud road with the suit object; focus on jade cup, liquid moonlight, healing water arrays; express pursuit, movement, charged intent through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-queen",
+      "englishName": "Queen of Cups",
+      "chineseName": "灵杯王后",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "inner mastery and care",
+      "reversedMeaning": "smothering or withdrawal",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "regal cultivator seated in a refined chamber, suit object orbiting gently; focus on jade cup, liquid moonlight, healing water arrays; express mastery through receptivity, care, subtle command through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Queen of Cups\" (灵杯王后). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: regal cultivator seated in a refined chamber, suit object orbiting gently; focus on jade cup, liquid moonlight, healing water arrays; express mastery through receptivity, care, subtle command through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "cups-king",
+      "englishName": "King of Cups",
+      "chineseName": "灵杯国王",
+      "type": "Minor Arcana",
+      "suit": "Cups",
+      "uprightMeaning": "outer mastery and responsibility",
+      "reversedMeaning": "rigidity or misuse of power",
+      "visualSymbols": [
+        "jade cup, liquid moonlight, healing water arrays",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on jade cup, liquid moonlight, healing water arrays; express mature authority, discipline, outer command through emotion, intuition, healing, relationship and inner flow",
+      "colorSuggestion": "moon silver, deep teal, jade green, soft cyan",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"King of Cups\" (灵杯国王). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Cups, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on jade cup, liquid moonlight, healing water arrays; express mature authority, discipline, outer command through emotion, intuition, healing, relationship and inner flow. Palette: moon silver, deep teal, jade green, soft cyan. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-ace",
+      "englishName": "Ace of Swords",
+      "chineseName": "飞剑一",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "new potential",
+      "reversedMeaning": "blocked beginning",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "single sacred object floating above an altar, vast negative space; focus on flying sword, cold blue blade, data wind, clear judgment; express seed, pure potential, first spark through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ace of Swords\" (飞剑一). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: single sacred object floating above an altar, vast negative space; focus on flying sword, cold blue blade, data wind, clear judgment; express seed, pure potential, first spark through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-two",
+      "englishName": "Two of Swords",
+      "chineseName": "飞剑二",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "balance and choice",
+      "reversedMeaning": "indecision or imbalance",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "two mirrored objects held in tension by a young cultivator; focus on flying sword, cold blue blade, data wind, clear judgment; express choice, balance, first coordination through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Two of Swords\" (飞剑二). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: two mirrored objects held in tension by a young cultivator; focus on flying sword, cold blue blade, data wind, clear judgment; express choice, balance, first coordination through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-three",
+      "englishName": "Three of Swords",
+      "chineseName": "飞剑三",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "collaboration and expansion",
+      "reversedMeaning": "scattered effort",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "three objects forming a triangular spell array with distant allies; focus on flying sword, cold blue blade, data wind, clear judgment; express growth, collaboration, first result through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Three of Swords\" (飞剑三). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: three objects forming a triangular spell array with distant allies; focus on flying sword, cold blue blade, data wind, clear judgment; express growth, collaboration, first result through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-four",
+      "englishName": "Four of Swords",
+      "chineseName": "飞剑四",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "stability and pause",
+      "reversedMeaning": "stagnation or restlessness",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "four objects anchoring a calm square courtyard ritual; focus on flying sword, cold blue blade, data wind, clear judgment; express structure, pause, stable container through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Four of Swords\" (飞剑四). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: four objects anchoring a calm square courtyard ritual; focus on flying sword, cold blue blade, data wind, clear judgment; express structure, pause, stable container through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-five",
+      "englishName": "Five of Swords",
+      "chineseName": "飞剑五",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "conflict and adjustment",
+      "reversedMeaning": "recovery after friction",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "five objects scattered through a tense neon training ground; focus on flying sword, cold blue blade, data wind, clear judgment; express friction, challenge, disruption through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Five of Swords\" (飞剑五). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: five objects scattered through a tense neon training ground; focus on flying sword, cold blue blade, data wind, clear judgment; express friction, challenge, disruption through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-six",
+      "englishName": "Six of Swords",
+      "chineseName": "飞剑六",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "support and return",
+      "reversedMeaning": "nostalgia or dependence",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "six objects guiding travelers through a restored old gate; focus on flying sword, cold blue blade, data wind, clear judgment; express return, harmony, earned support through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Six of Swords\" (飞剑六). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: six objects guiding travelers through a restored old gate; focus on flying sword, cold blue blade, data wind, clear judgment; express return, harmony, earned support through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-seven",
+      "englishName": "Seven of Swords",
+      "chineseName": "飞剑七",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "strategy and defense",
+      "reversedMeaning": "doubt or poor planning",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "seven objects arranged as defensive layers around a lone figure; focus on flying sword, cold blue blade, data wind, clear judgment; express test, strategy, guarded progress through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Seven of Swords\" (飞剑七). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: seven objects arranged as defensive layers around a lone figure; focus on flying sword, cold blue blade, data wind, clear judgment; express test, strategy, guarded progress through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-eight",
+      "englishName": "Eight of Swords",
+      "chineseName": "飞剑八",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "momentum and practice",
+      "reversedMeaning": "delay or rushed mistakes",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "eight objects moving in synchronized luminous trails; focus on flying sword, cold blue blade, data wind, clear judgment; express momentum, practice, acceleration through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Eight of Swords\" (飞剑八). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: eight objects moving in synchronized luminous trails; focus on flying sword, cold blue blade, data wind, clear judgment; express momentum, practice, acceleration through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-nine",
+      "englishName": "Nine of Swords",
+      "chineseName": "飞剑九",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "resilience and threshold",
+      "reversedMeaning": "fatigue or guarded fear",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "nine objects circling a tired but standing cultivator; focus on flying sword, cold blue blade, data wind, clear judgment; express threshold, endurance, inner reserve through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Nine of Swords\" (飞剑九). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: nine objects circling a tired but standing cultivator; focus on flying sword, cold blue blade, data wind, clear judgment; express threshold, endurance, inner reserve through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-ten",
+      "englishName": "Ten of Swords",
+      "chineseName": "飞剑十",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "completion and burden",
+      "reversedMeaning": "release or overload",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "ten objects forming a heavy luminous mandala over a city roof; focus on flying sword, cold blue blade, data wind, clear judgment; express completion, load, culmination through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ten of Swords\" (飞剑十). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: ten objects forming a heavy luminous mandala over a city roof; focus on flying sword, cold blue blade, data wind, clear judgment; express completion, load, culmination through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-page",
+      "englishName": "Page of Swords",
+      "chineseName": "飞剑侍者",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "study and first message",
+      "reversedMeaning": "immaturity or distraction",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "young apprentice discovering the suit object in a quiet workshop; focus on flying sword, cold blue blade, data wind, clear judgment; express curiosity, message, apprentice mind through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Page of Swords\" (飞剑侍者). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: young apprentice discovering the suit object in a quiet workshop; focus on flying sword, cold blue blade, data wind, clear judgment; express curiosity, message, apprentice mind through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-knight",
+      "englishName": "Knight of Swords",
+      "chineseName": "飞剑骑士",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "movement and pursuit",
+      "reversedMeaning": "recklessness or hesitation",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "mounted cultivator rushing through a neon cloud road with the suit object; focus on flying sword, cold blue blade, data wind, clear judgment; express pursuit, movement, charged intent through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Knight of Swords\" (飞剑骑士). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: mounted cultivator rushing through a neon cloud road with the suit object; focus on flying sword, cold blue blade, data wind, clear judgment; express pursuit, movement, charged intent through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-queen",
+      "englishName": "Queen of Swords",
+      "chineseName": "飞剑王后",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "inner mastery and care",
+      "reversedMeaning": "smothering or withdrawal",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "regal cultivator seated in a refined chamber, suit object orbiting gently; focus on flying sword, cold blue blade, data wind, clear judgment; express mastery through receptivity, care, subtle command through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Queen of Swords\" (飞剑王后). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: regal cultivator seated in a refined chamber, suit object orbiting gently; focus on flying sword, cold blue blade, data wind, clear judgment; express mastery through receptivity, care, subtle command through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "swords-king",
+      "englishName": "King of Swords",
+      "chineseName": "飞剑国王",
+      "type": "Minor Arcana",
+      "suit": "Swords",
+      "uprightMeaning": "outer mastery and responsibility",
+      "reversedMeaning": "rigidity or misuse of power",
+      "visualSymbols": [
+        "flying sword, cold blue blade, data wind, clear judgment",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on flying sword, cold blue blade, data wind, clear judgment; express mature authority, discipline, outer command through thought, conflict, clarity, discipline and truth",
+      "colorSuggestion": "steel blue, pale cyan, ink black, sharp white",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"King of Swords\" (飞剑国王). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Swords, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on flying sword, cold blue blade, data wind, clear judgment; express mature authority, discipline, outer command through thought, conflict, clarity, discipline and truth. Palette: steel blue, pale cyan, ink black, sharp white. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-ace",
+      "englishName": "Ace of Pentacles",
+      "chineseName": "灵币一",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "new potential",
+      "reversedMeaning": "blocked beginning",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "single sacred object floating above an altar, vast negative space; focus on jade coin, circuit sigil, earth altar, material cultivation; express seed, pure potential, first spark through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ace of Pentacles\" (灵币一). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: single sacred object floating above an altar, vast negative space; focus on jade coin, circuit sigil, earth altar, material cultivation; express seed, pure potential, first spark through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-two",
+      "englishName": "Two of Pentacles",
+      "chineseName": "灵币二",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "balance and choice",
+      "reversedMeaning": "indecision or imbalance",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "two mirrored objects held in tension by a young cultivator; focus on jade coin, circuit sigil, earth altar, material cultivation; express choice, balance, first coordination through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Two of Pentacles\" (灵币二). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: two mirrored objects held in tension by a young cultivator; focus on jade coin, circuit sigil, earth altar, material cultivation; express choice, balance, first coordination through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-three",
+      "englishName": "Three of Pentacles",
+      "chineseName": "灵币三",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "collaboration and expansion",
+      "reversedMeaning": "scattered effort",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "three objects forming a triangular spell array with distant allies; focus on jade coin, circuit sigil, earth altar, material cultivation; express growth, collaboration, first result through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Three of Pentacles\" (灵币三). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: three objects forming a triangular spell array with distant allies; focus on jade coin, circuit sigil, earth altar, material cultivation; express growth, collaboration, first result through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-four",
+      "englishName": "Four of Pentacles",
+      "chineseName": "灵币四",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "stability and pause",
+      "reversedMeaning": "stagnation or restlessness",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "four objects anchoring a calm square courtyard ritual; focus on jade coin, circuit sigil, earth altar, material cultivation; express structure, pause, stable container through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Four of Pentacles\" (灵币四). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: four objects anchoring a calm square courtyard ritual; focus on jade coin, circuit sigil, earth altar, material cultivation; express structure, pause, stable container through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-five",
+      "englishName": "Five of Pentacles",
+      "chineseName": "灵币五",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "conflict and adjustment",
+      "reversedMeaning": "recovery after friction",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "five objects scattered through a tense neon training ground; focus on jade coin, circuit sigil, earth altar, material cultivation; express friction, challenge, disruption through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Five of Pentacles\" (灵币五). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: five objects scattered through a tense neon training ground; focus on jade coin, circuit sigil, earth altar, material cultivation; express friction, challenge, disruption through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-six",
+      "englishName": "Six of Pentacles",
+      "chineseName": "灵币六",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "support and return",
+      "reversedMeaning": "nostalgia or dependence",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "six objects guiding travelers through a restored old gate; focus on jade coin, circuit sigil, earth altar, material cultivation; express return, harmony, earned support through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Six of Pentacles\" (灵币六). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: six objects guiding travelers through a restored old gate; focus on jade coin, circuit sigil, earth altar, material cultivation; express return, harmony, earned support through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-seven",
+      "englishName": "Seven of Pentacles",
+      "chineseName": "灵币七",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "strategy and defense",
+      "reversedMeaning": "doubt or poor planning",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "seven objects arranged as defensive layers around a lone figure; focus on jade coin, circuit sigil, earth altar, material cultivation; express test, strategy, guarded progress through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Seven of Pentacles\" (灵币七). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: seven objects arranged as defensive layers around a lone figure; focus on jade coin, circuit sigil, earth altar, material cultivation; express test, strategy, guarded progress through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-eight",
+      "englishName": "Eight of Pentacles",
+      "chineseName": "灵币八",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "momentum and practice",
+      "reversedMeaning": "delay or rushed mistakes",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "eight objects moving in synchronized luminous trails; focus on jade coin, circuit sigil, earth altar, material cultivation; express momentum, practice, acceleration through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Eight of Pentacles\" (灵币八). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: eight objects moving in synchronized luminous trails; focus on jade coin, circuit sigil, earth altar, material cultivation; express momentum, practice, acceleration through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-nine",
+      "englishName": "Nine of Pentacles",
+      "chineseName": "灵币九",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "resilience and threshold",
+      "reversedMeaning": "fatigue or guarded fear",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "nine objects circling a tired but standing cultivator; focus on jade coin, circuit sigil, earth altar, material cultivation; express threshold, endurance, inner reserve through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Nine of Pentacles\" (灵币九). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: nine objects circling a tired but standing cultivator; focus on jade coin, circuit sigil, earth altar, material cultivation; express threshold, endurance, inner reserve through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-ten",
+      "englishName": "Ten of Pentacles",
+      "chineseName": "灵币十",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "completion and burden",
+      "reversedMeaning": "release or overload",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "ten objects forming a heavy luminous mandala over a city roof; focus on jade coin, circuit sigil, earth altar, material cultivation; express completion, load, culmination through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Ten of Pentacles\" (灵币十). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: ten objects forming a heavy luminous mandala over a city roof; focus on jade coin, circuit sigil, earth altar, material cultivation; express completion, load, culmination through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-page",
+      "englishName": "Page of Pentacles",
+      "chineseName": "灵币侍者",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "study and first message",
+      "reversedMeaning": "immaturity or distraction",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "young apprentice discovering the suit object in a quiet workshop; focus on jade coin, circuit sigil, earth altar, material cultivation; express curiosity, message, apprentice mind through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Page of Pentacles\" (灵币侍者). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: young apprentice discovering the suit object in a quiet workshop; focus on jade coin, circuit sigil, earth altar, material cultivation; express curiosity, message, apprentice mind through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-knight",
+      "englishName": "Knight of Pentacles",
+      "chineseName": "灵币骑士",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "movement and pursuit",
+      "reversedMeaning": "recklessness or hesitation",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "mounted cultivator rushing through a neon cloud road with the suit object; focus on jade coin, circuit sigil, earth altar, material cultivation; express pursuit, movement, charged intent through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Knight of Pentacles\" (灵币骑士). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: mounted cultivator rushing through a neon cloud road with the suit object; focus on jade coin, circuit sigil, earth altar, material cultivation; express pursuit, movement, charged intent through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-queen",
+      "englishName": "Queen of Pentacles",
+      "chineseName": "灵币王后",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "inner mastery and care",
+      "reversedMeaning": "smothering or withdrawal",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "regal cultivator seated in a refined chamber, suit object orbiting gently; focus on jade coin, circuit sigil, earth altar, material cultivation; express mastery through receptivity, care, subtle command through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"Queen of Pentacles\" (灵币王后). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: regal cultivator seated in a refined chamber, suit object orbiting gently; focus on jade coin, circuit sigil, earth altar, material cultivation; express mastery through receptivity, care, subtle command through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    },
+    {
+      "id": "pentacles-king",
+      "englishName": "King of Pentacles",
+      "chineseName": "灵币国王",
+      "type": "Minor Arcana",
+      "suit": "Pentacles",
+      "uprightMeaning": "outer mastery and responsibility",
+      "reversedMeaning": "rigidity or misuse of power",
+      "visualSymbols": [
+        "jade coin, circuit sigil, earth altar, material cultivation",
+        "floating talismans",
+        "cultivation aura",
+        "cybernetic feng shui patterns"
+      ],
+      "composition": "sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on jade coin, circuit sigil, earth altar, material cultivation; express mature authority, discipline, outer command through body, work, resources, craft and stability",
+      "colorSuggestion": "jade green, bronze gold, earth umber, rice-paper ivory",
+      "imagePrompt": "Create an original commercial tarot card illustration for \"King of Pentacles\" (灵币国王). Theme: Japanese otome fantasy tarot card style, dreamy shoujo-inspired illustration, elegant female xianxia cultivators, soft Taoist magic, floating talismans, moonlit immortal gardens, delicate ancient Chinese fantasy architecture, celestial flowers, luminous ribbons, refined romantic fantasy, cinematic soft lighting. Character rule: All human figures must be elegant ethereal female xianxia cultivators with flowing robes, subtle immortal aura, original hair ornaments, soft otome fantasy beauty, and no male-presenting characters. Structure: Minor Arcana, suit Pentacles, inspired only by abstract tarot meanings, never by existing deck compositions. Composition: sovereign cultivator standing before a cosmic city map, suit object blazing steadily; focus on jade coin, circuit sigil, earth altar, material cultivation; express mature authority, discipline, outer command through body, work, resources, craft and stability. Palette: jade green, bronze gold, earth umber, rice-paper ivory. Vertical 2:3 print-ready illustration, elegant fantasy concept art, cinematic lighting, crisp readable silhouette, rich symbolic details. No text, no title, no border, no number; layout elements will be added later by the app.",
+      "negativePrompt": "no text, no title, no border, no number, no watermark, no logo, no copied Rider-Waite-Smith composition, no copied Thoth, Modern Witch, Wild Unknown or Light Seer's imagery, no low resolution, no blurry face, no extra fingers, no western medieval costume, no random typography, no harsh cyberpunk, no gritty sci-fi machinery, no dark dystopian armor"
+    }
+  ]
+}

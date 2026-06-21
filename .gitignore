@@ -1,0 +1,9 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+*.log
+.DS_Store
+
+# Local AI defaults may contain API keys.
+src/app/ai-config.local.js

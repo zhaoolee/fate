@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Gold bagua pattern">
+  <defs>
+    <g id="solidLine">
+      <rect x="-42" y="-6" width="84" height="12" rx="3"/>
+    </g>
+    <g id="brokenLine">
+      <rect x="-42" y="-6" width="34" height="12" rx="3"/>
+      <rect x="8" y="-6" width="34" height="12" rx="3"/>
+    </g>
+    <g id="qian">
+      <use href="#solidLine" y="-20"/>
+      <use href="#solidLine"/>
+      <use href="#solidLine" y="20"/>
+    </g>
+    <g id="dui">
+      <use href="#brokenLine" y="-20"/>
+      <use href="#solidLine"/>
+      <use href="#solidLine" y="20"/>
+    </g>
+    <g id="li">
+      <use href="#solidLine" y="-20"/>
+      <use href="#brokenLine"/>
+      <use href="#solidLine" y="20"/>
+    </g>
+    <g id="zhen">
+      <use href="#brokenLine" y="-20"/>
+      <use href="#brokenLine"/>
+      <use href="#solidLine" y="20"/>
+    </g>
+    <g id="xun">
+      <use href="#solidLine" y="-20"/>
+      <use href="#solidLine"/>
+      <use href="#brokenLine" y="20"/>
+    </g>
+    <g id="kan">
+      <use href="#brokenLine" y="-20"/>
+      <use href="#solidLine"/>
+      <use href="#brokenLine" y="20"/>
+    </g>
+    <g id="gen">
+      <use href="#solidLine" y="-20"/>
+      <use href="#brokenLine"/>
+      <use href="#brokenLine" y="20"/>
+    </g>
+    <g id="kun">
+      <use href="#brokenLine" y="-20"/>
+      <use href="#brokenLine"/>
+      <use href="#brokenLine" y="20"/>
+    </g>
+  </defs>
+
+  <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="256" cy="256" r="254" stroke-width="4" opacity="0.42"/>
+    <circle cx="256" cy="256" r="204" stroke-width="2" opacity="0.28"/>
+    <circle cx="256" cy="256" r="144" stroke-width="1.5" opacity="0.18"/>
+  </g>
+
+  <g fill="#000000" opacity="0.9">
+    <g transform="translate(256 66)"><use href="#qian"/></g>
+    <g transform="translate(390 122) rotate(45)"><use href="#dui"/></g>
+    <g transform="translate(446 256) rotate(90)"><use href="#li"/></g>
+    <g transform="translate(390 390) rotate(135)"><use href="#zhen"/></g>
+    <g transform="translate(256 446) rotate(180)"><use href="#xun"/></g>
+    <g transform="translate(122 390) rotate(225)"><use href="#kan"/></g>
+    <g transform="translate(66 256) rotate(270)"><use href="#gen"/></g>
+    <g transform="translate(122 122) rotate(315)"><use href="#kun"/></g>
+  </g>
+
+  <g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+    <path d="M256 168c48 0 88 39 88 88s-40 88-88 88c-49 0-88-40-88-88s39-88 88-88z" stroke-width="8"/>
+    <path d="M256 168c26 0 44 20 44 44 0 25-18 44-44 44s-44 20-44 44c0 25 18 44 44 44" stroke-width="8"/>
+    <circle cx="256" cy="212" r="10" fill="#000000" stroke="none"/>
+    <circle cx="256" cy="300" r="10" fill="#000000" stroke="none"/>
+  </g>
+</svg>

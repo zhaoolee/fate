@@ -1,0 +1,116 @@
+name: Build Installers
+
+on:
+  push:
+    branches:
+      - main
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build:
+    name: Build ${{ matrix.name }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: windows
+            os: windows-latest
+            artifact_name: Fate-windows
+          - name: macos
+            os: macos-latest
+            artifact_name: Fate-macos
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Setup Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust
+        uses: Swatinem/rust-cache@v2
+        with:
+          workspaces: src-tauri -> target
+
+      - name: Setup Python for packaging
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install Windows bundling tools
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: choco install nsis wixtoolset -y
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Tauri app
+        run: npm run build
+
+      - name: Archive installers
+        shell: bash
+        env:
+          ASSET_NAME: ${{ matrix.artifact_name }}
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, ZIP_DEFLATED
+          import os
+
+          bundle_dir = Path("src-tauri/target/release/bundle")
+          if not bundle_dir.exists():
+              raise SystemExit("Tauri bundle directory was not created")
+
+          out_dir = Path("release-assets")
+          out_dir.mkdir(exist_ok=True)
+          asset = out_dir / f"{os.environ['ASSET_NAME']}.zip"
+
+          with ZipFile(asset, "w", ZIP_DEFLATED) as zf:
+              for path in bundle_dir.rglob("*"):
+                  if path.is_file():
+                      zf.write(path, path.relative_to(bundle_dir))
+
+          print(asset)
+          PY
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.artifact_name }}
+          path: release-assets/${{ matrix.artifact_name }}.zip
+          if-no-files-found: error
+
+  release:
+    name: Publish GitHub Release
+    runs-on: ubuntu-latest
+    needs: build
+    if: startsWith(github.ref, 'refs/tags/v')
+    steps:
+      - name: Download build artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: release-assets
+          merge-multiple: true
+
+      - name: Upload assets to GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: release-assets/*.zip
+          generate_release_notes: true
