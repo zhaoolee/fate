@@ -3,5 +3,5 @@
   "identifier": "default",
   "description": "Default permissions for Fate windows",
   "windows": ["main", "break-overlay", "break-overlay-preview"],
-  "permissions": ["core:default", "sql:default"]
+  "permissions": ["core:default", "core:window:allow-set-progress-bar", "sql:default"]
 }

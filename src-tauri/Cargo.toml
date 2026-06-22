@@ -1,6 +1,6 @@
 [package]
 name = "fate"
-version = "0.1.4"
+version = "0.1.5"
 description = "A lightweight rest reminder built with Tauri"
 authors = ["zhaoolee"]
 license = ""

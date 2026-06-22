@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { invoke } from "@tauri-apps/api/core";
 import { listen } from "@tauri-apps/api/event";
+import { ProgressBarStatus } from "@tauri-apps/api/window";
 import {
   AchievementView,
   AiView,
@@ -25,6 +26,7 @@ import {
   clampActivityHour,
   currentMaxActivityHour,
   currentRoute,
+  currentWindowInfo,
   defaultSettings,
   deskDecorBackgrounds,
   deskDecorChoiceFromTips,
@@ -130,6 +132,12 @@ function RestVoyageProgress({ voyage }) {
       </div>
     </div>
   );
+}
+
+function setAppIconProgressBar(state) {
+  const { window: tauriWindow, label } = currentWindowInfo();
+  if (!tauriWindow || label !== "main" || typeof tauriWindow.setProgressBar !== "function") return;
+  tauriWindow.setProgressBar(state).catch(() => {});
 }
 
 export default function App() {
@@ -520,8 +528,26 @@ export default function App() {
   useEffect(() => (
     () => {
       window.clearTimeout(restVoyageHideTimerRef.current);
+      setAppIconProgressBar({ status: ProgressBarStatus.None, progress: 0 });
     }
   ), []);
+
+  useEffect(() => {
+    if (!restVoyage) {
+      setAppIconProgressBar({ status: ProgressBarStatus.None, progress: 0 });
+      return;
+    }
+
+    const progress = Math.round(Math.min(1, Math.max(0, Number(restVoyage.progress ?? 0))) * 100);
+    const status = restVoyage.status === "failed"
+      ? ProgressBarStatus.Error
+      : ProgressBarStatus.Normal;
+
+    setAppIconProgressBar({
+      status,
+      progress: restVoyage.status === "complete" ? 100 : progress
+    });
+  }, [restVoyage]);
 
   const hideRestVoyageAfter = useCallback((delayMs) => {
     window.clearTimeout(restVoyageHideTimerRef.current);
