@@ -79,15 +79,23 @@ jobs:
           out_dir.mkdir(exist_ok=True)
           asset = out_dir / f"{os.environ['ASSET_NAME']}.zip"
           release_dir = Path("src-tauri/target/release")
+          runner_os = os.environ.get("RUNNER_OS")
 
           files = []
-          if bundle_dir.exists():
+          if runner_os == "macOS":
+              dmg_dir = bundle_dir / "dmg"
+              files = [
+                  (path, path.relative_to(bundle_dir))
+                  for path in sorted(dmg_dir.glob("*.dmg"))
+                  if path.is_file()
+              ]
+          elif bundle_dir.exists():
               files = [
                   (path, path.relative_to(bundle_dir))
                   for path in bundle_dir.rglob("*")
                   if path.is_file()
               ]
-          elif os.environ.get("RUNNER_OS") == "Windows":
+          elif runner_os == "Windows":
               exe_files = sorted(release_dir.glob("*.exe"))
               dll_files = sorted(release_dir.glob("*.dll"))
               resources_dir = release_dir / "resources"
