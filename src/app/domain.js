@@ -95,7 +95,7 @@ export const defaultAiConfig = {
 export const defaultSettings = {
   workMinutes: 45,
   restMinutes: 15,
-  appearanceMode: "system",
+  appearanceMode: "dark",
   languageMode: "system",
   useCustomAi: false,
   llmEndpoint: "",
@@ -278,7 +278,7 @@ export function normalizeSettings(settings) {
 
   normalized.useCustomAi = hasOfficialDefaultAiConfig ? raw.useCustomAi === true : true;
   normalized.showRocketTools = raw.showRocketTools === true;
-  normalized.appearanceMode = normalizeAppearanceMode(raw.appearanceMode);
+  normalized.appearanceMode = normalizeAppearanceMode(normalized.appearanceMode);
   normalized.languageMode = normalizeLanguageMode(raw.languageMode);
   normalized.birthYear = birthParts.year;
   normalized.birthMonth = birthParts.month;

@@ -188,17 +188,25 @@ function splitTipTextIntoLines(text, maxWidth, font) {
     const remainingText = characters.slice(start).join("");
     const targetWidth = measure(remainingText) / (lineCount - lineIndex);
     let bestEnd = start + 1;
-    let punctuationEnd = -1;
+    let bestScore = Number.POSITIVE_INFINITY;
 
     for (let index = start; index < characters.length; index += 1) {
       const candidate = characters.slice(start, index + 1).join("");
       const width = measure(candidate);
-      if (isTipLineBreakChar(characters[index]) && width >= targetWidth * 0.56) {
-        punctuationEnd = index + 1;
+
+      const balancePenalty = Math.abs(width - targetWidth);
+      const overflowPenalty = width > maxWidth ? (width - maxWidth) * 3 : 0;
+      const punctuationBonus = isTipLineBreakChar(characters[index]) && width >= targetWidth * 0.76
+        ? targetWidth * 0.1
+        : 0;
+      const score = balancePenalty + overflowPenalty - punctuationBonus;
+
+      if (score < bestScore) {
+        bestScore = score;
+        bestEnd = index + 1;
       }
-      bestEnd = index + 1;
-      if (width >= targetWidth) {
-        bestEnd = punctuationEnd > start ? punctuationEnd : bestEnd;
+
+      if (width >= targetWidth * 1.18) {
         break;
       }
     }
@@ -472,6 +480,59 @@ const Tabs = memo(function Tabs({ tab, onChange, windowSizeMode, onWindowSizeMod
   );
 });
 
+const nixieDigitPaths = {
+  0: "M50 18 C27 18 18 45 18 90 C18 135 27 162 50 162 C73 162 82 135 82 90 C82 45 73 18 50 18 Z",
+  1: "M36 42 L54 20 L54 160 M38 160 L70 160",
+  2: "M22 48 C28 24 72 20 80 50 C86 73 68 86 52 101 L22 160 L82 160",
+  3: "M24 28 L78 28 L52 87 C83 88 91 128 70 151 C55 167 28 158 21 145",
+  4: "M75 160 L75 20 M75 100 L18 100 L66 22",
+  5: "M80 26 L28 26 L23 87 C54 79 84 96 82 128 C80 160 47 168 22 149",
+  6: "M78 34 C51 18 23 45 20 88 C17 132 36 161 62 158 C84 155 90 128 76 111 C61 92 33 98 22 118",
+  7: "M18 28 L84 28 L42 160",
+  8: "M50 18 C28 18 22 48 36 70 C48 88 52 88 64 70 C78 48 72 18 50 18 Z M50 89 C25 89 20 125 35 148 C48 168 52 168 65 148 C80 125 75 89 50 89 Z",
+  9: "M76 82 C71 111 29 111 23 78 C16 42 44 18 68 32 C92 46 88 92 72 126 L58 160"
+};
+
+const NixieDigit = memo(function NixieDigit({ value }) {
+  const digitPath = nixieDigitPaths[value] ?? nixieDigitPaths[0];
+  const ghostPath = nixieDigitPaths[8];
+
+  return (
+    <svg className="nixie-digit" viewBox="0 0 100 180" aria-hidden="true">
+      <path className="nixie-digit-ghost" d={ghostPath} />
+      <path className="nixie-digit-glow" d={digitPath} />
+      <path className="nixie-digit-lit" d={digitPath} />
+    </svg>
+  );
+});
+
+const NixieSeparator = memo(function NixieSeparator() {
+  return (
+    <span className="nixie-tube nixie-separator-tube">
+      <svg className="nixie-separator-mark" viewBox="0 0 100 180" aria-hidden="true">
+        <path className="nixie-separator-ghost" d="M32 28 C58 22 78 45 76 82 C73 119 47 138 22 154 M28 42 L78 108 M22 74 L68 152" />
+        <circle className="nixie-separator-dot" cx="72" cy="146" r="5" />
+      </svg>
+    </span>
+  );
+});
+
+const NixieTime = memo(function NixieTime({ value }) {
+  return (
+    <span className="nixie-time" aria-hidden="true">
+      {Array.from(value).map((character, index) => (
+        character === ":" ? (
+          <NixieSeparator key={`${character}-${index}`} />
+        ) : (
+          <span className="nixie-tube" key={`${character}-${index}`}>
+            <NixieDigit value={character} />
+          </span>
+        )
+      ))}
+    </span>
+  );
+});
+
 const TodayView = memo(function TodayView({
   active,
   today,
@@ -485,6 +546,7 @@ const TodayView = memo(function TodayView({
   const { t } = useI18n();
   const selectedHour = clampActivityHour(activityHour, activityMaxHour);
   const ring = useMemo(() => activityRingState(activitySamples, selectedHour), [activitySamples, selectedHour]);
+  const selectedHourLabel = formatHourPoint(selectedHour);
   const [decorImageSrc, handleDecorImageError] = useStableImageSrc(deskDecorItem?.url ?? "");
   const [ringTooltip, setRingTooltip] = useState(null);
   const updateRingTooltip = useCallback((event) => {
@@ -595,7 +657,9 @@ const TodayView = memo(function TodayView({
                 <IpodSkipIcon direction="next" />
               </button>
             </div>
-            <span className="ring-hour-label">{formatHourPoint(selectedHour)}</span>
+            <span className="ring-hour-label" aria-label={selectedHourLabel}>
+              <NixieTime value={selectedHourLabel} />
+            </span>
           </div>
         </div>
       </div>

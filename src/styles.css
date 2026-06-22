@@ -1173,23 +1173,170 @@ h2 {
   justify-self: end;
   height: var(--ring-control-height);
   min-width: 0;
-  padding: 0 2px;
+  padding: 0;
   display: inline-flex;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: right;
-  font-size: 48px;
-  font-weight: 680;
+  align-items: flex-end;
+  justify-content: flex-end;
   line-height: 1;
-  letter-spacing: 0;
   white-space: nowrap;
-  font-variant-numeric: tabular-nums;
-  font-feature-settings: "tnum" 1, "case" 1;
-  transform: scaleY(1.06);
-  transform-origin: right center;
-  text-shadow:
-    0 1px 1px color-mix(in srgb, var(--shadow-medium) 78%, transparent),
-    0 8px 24px color-mix(in srgb, var(--shadow-soft) 58%, transparent);
+}
+
+.nixie-time {
+  --nixie-orange: #ff7a18;
+  --nixie-hot: #ffd06b;
+  --nixie-dim: rgba(104, 25, 12, 0.5);
+  position: relative;
+  height: var(--ring-control-height);
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 2px;
+  padding: 0 1px 0 2px;
+  filter:
+    drop-shadow(0 12px 16px color-mix(in srgb, var(--shadow-medium) 62%, transparent))
+    drop-shadow(0 0 14px rgba(255, 78, 17, 0.2));
+  transform: none;
+}
+
+.nixie-time::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  right: 7px;
+  bottom: -4px;
+  height: 2px;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 26px,
+    rgba(92, 12, 154, 0.76) 26px 31px
+  );
+  opacity: 0.72;
+}
+
+.nixie-tube {
+  position: relative;
+  width: 29px;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(86, 40, 31, 0.88);
+  border-radius: 12px 12px 6px 6px;
+  background:
+    radial-gradient(ellipse at 50% 2%, rgba(255, 231, 198, 0.2), transparent 12%),
+    linear-gradient(90deg, rgba(255, 235, 216, 0.11), transparent 15% 84%, rgba(255, 205, 171, 0.06)),
+    radial-gradient(ellipse at 50% 40%, rgba(156, 34, 10, 0.22), transparent 63%),
+    linear-gradient(180deg, rgba(5, 4, 4, 0.98) 0%, rgba(34, 9, 5, 0.98) 18%, rgba(18, 4, 3, 0.99) 78%, rgba(0, 0, 0, 0.99) 100%);
+  box-shadow:
+    inset 0 1px 2px rgba(255, 235, 221, 0.12),
+    inset 0 -17px 17px rgba(0, 0, 0, 0.78),
+    inset 0 0 21px rgba(255, 69, 12, 0.12),
+    0 0 0 1px rgba(0, 0, 0, 0.46),
+    0 0 13px rgba(255, 74, 14, 0.11);
+  overflow: hidden;
+}
+
+.nixie-tube::before {
+  content: "";
+  position: absolute;
+  inset: 9px 5px 13px;
+  border-left: 1px solid rgba(255, 94, 24, 0.22);
+  border-right: 1px solid rgba(255, 94, 24, 0.14);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, transparent 46%, rgba(255, 104, 30, 0.18) 46% 54%, transparent 54%),
+    repeating-linear-gradient(90deg, transparent 0 5px, rgba(255, 79, 18, 0.13) 5px 6px),
+    repeating-linear-gradient(180deg, transparent 0 7px, rgba(255, 75, 18, 0.11) 7px 8px);
+  opacity: 0.86;
+}
+
+.nixie-tube::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  right: 4px;
+  bottom: 2px;
+  height: 13px;
+  border-radius: 2px 2px 9px 9px;
+  background:
+    repeating-linear-gradient(90deg, rgba(18, 14, 13, 0.95) 0 2px, rgba(89, 38, 24, 0.88) 2px 4px, rgba(9, 8, 8, 0.98) 4px 7px),
+    linear-gradient(180deg, rgba(255, 114, 38, 0.14), rgba(0, 0, 0, 0.82));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 140, 64, 0.14),
+    0 6px 0 -5px rgba(94, 7, 156, 0.9);
+}
+
+.nixie-digit {
+  z-index: 1;
+  width: 91%;
+  height: 83%;
+  overflow: visible;
+  mix-blend-mode: screen;
+  transform: translateY(-5px);
+}
+
+.nixie-digit path {
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.nixie-digit-ghost {
+  stroke: rgba(255, 93, 25, 0.16);
+  stroke-width: 0.98;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1 3.4;
+}
+
+.nixie-digit-glow {
+  stroke: rgba(255, 74, 11, 0.82);
+  stroke-width: 4.3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.5;
+  filter: blur(3.2px);
+}
+
+.nixie-digit-lit {
+  stroke: var(--nixie-orange);
+  stroke-width: 1.08;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 0.85 1.65;
+  filter:
+    drop-shadow(0 0 1px var(--nixie-hot))
+    drop-shadow(0 0 4px rgba(255, 96, 22, 0.9))
+    drop-shadow(0 0 9px rgba(255, 73, 13, 0.52));
+}
+
+.nixie-separator-mark {
+  z-index: 1;
+  width: 91%;
+  height: 83%;
+  overflow: visible;
+  mix-blend-mode: screen;
+  transform: translateY(-5px);
+}
+
+.nixie-separator-mark path,
+.nixie-separator-mark circle {
+  vector-effect: non-scaling-stroke;
+}
+
+.nixie-separator-ghost {
+  fill: none;
+  stroke: rgba(255, 87, 22, 0.18);
+  stroke-width: 1.02;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 1 3.2;
+}
+
+.nixie-separator-dot {
+  fill: var(--nixie-orange);
+  filter:
+    drop-shadow(0 0 1px var(--nixie-hot))
+    drop-shadow(0 0 5px rgba(255, 100, 22, 0.9))
+    drop-shadow(0 0 10px rgba(255, 72, 14, 0.66));
 }
 
 .panel {
@@ -2580,17 +2727,18 @@ textarea {
 
   .today-tip-marquee {
     position: absolute;
-    left: 0;
-    right: 0;
+    left: 50%;
+    right: auto;
     bottom: 88px;
-    width: 100%;
+    width: min(calc(100% - 44px), 350px);
     height: 132px;
     font-size: 26px;
     line-height: 1.18;
+    transform: translateX(-50%);
   }
 
   .today-tip-marquee .tip-marquee-item {
-    padding: 0 24px;
+    padding: 0;
   }
 
   .today-tip-marquee .tip-marquee-text {
@@ -2598,7 +2746,9 @@ textarea {
   }
 
   .today-tip-marquee .tip-marquee-text.lines-3 {
-    transform: translateY(14px);
+    font-size: 24px;
+    line-height: 1.14;
+    transform: translateY(30px);
   }
 
   .ring-controls {
@@ -2612,10 +2762,17 @@ textarea {
 
   .ring-hour-label {
     align-items: flex-end;
-    font-size: 64px;
-    font-weight: 680;
-    transform: scaleY(1.12);
-    transform-origin: right bottom;
+    transform: none;
+  }
+
+  .ring-hour-label .nixie-time {
+    height: var(--ring-control-height);
+    gap: 2px;
+  }
+
+  .ring-hour-label .nixie-tube {
+    width: 30px;
+    border-radius: 12px 12px 6px 6px;
   }
 }
 
