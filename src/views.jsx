@@ -24,7 +24,6 @@ import {
   fmtTime,
   formatCalendarMonth,
   formatHistoryTime,
-  formatHourPoint,
   customAiPlaceholders,
   hasOfficialDefaultAiConfig,
   languageModes,
@@ -35,8 +34,7 @@ import {
   percent,
   sameCalendarMonth,
   shuffleMarqueeItems,
-  tabs,
-  windowSizeModes
+  tabs
 } from "./app/domain";
 
 function decorDisplayName(t, name) {
@@ -64,7 +62,7 @@ const StableImage = memo(function StableImage({ src, alt, ...props }) {
   );
 });
 
-const Header = memo(function Header({ pinned, snapshot, onPinnedChange }) {
+const Header = memo(function Header({ pinned, snapshot, activitySlot = null, onPinnedChange }) {
   const { t } = useI18n();
   const pinLabel = pinned ? t("topbar.unpin") : t("topbar.pin");
   const keyboardCount = Number(snapshot?.keyboardCount ?? 0);
@@ -72,11 +70,14 @@ const Header = memo(function Header({ pinned, snapshot, onPinnedChange }) {
 
   return (
     <header className="topbar app-toolbar">
-      <InputActivityMeters
-        className="topbar-input-meters"
-        keyboardCount={keyboardCount}
-        mouseCount={mouseCount}
-      />
+      <div className="topbar-activity-slot">
+        <InputActivityMeters
+          className="topbar-input-meters"
+          keyboardCount={keyboardCount}
+          mouseCount={mouseCount}
+        />
+        {activitySlot}
+      </div>
       <div className="topbar-actions">
         <button
           className={`pin-button ${pinned ? "active" : ""}`}
@@ -168,6 +169,10 @@ function isTipLineBreakChar(character) {
   return /[\s,，.。;；:：!！?？、]/.test(character);
 }
 
+function isTipLeadingPunctuation(character) {
+  return /[,，.。;；:：!！?？、]/.test(character);
+}
+
 function splitTipTextIntoLines(text, maxWidth, font) {
   const characters = Array.from(text);
   if (!characters.length || maxWidth <= 0 || typeof document === "undefined") return [text];
@@ -209,6 +214,10 @@ function splitTipTextIntoLines(text, maxWidth, font) {
       if (width >= targetWidth * 1.18) {
         break;
       }
+    }
+
+    while (bestEnd < characters.length && isTipLeadingPunctuation(characters[bestEnd])) {
+      bestEnd += 1;
     }
 
     const line = characters.slice(start, bestEnd).join("").trim();
@@ -289,7 +298,7 @@ const InputActivityMeters = memo(function InputActivityMeters({ className = "", 
 
 const inputMeterCells = Array.from({ length: 32 }, (_, index) => index);
 const inputMeterMaxLevel = inputMeterCells.length;
-const inputMeterPeakLevel = Math.floor(inputMeterMaxLevel * 0.78);
+const inputMeterPeakLevel = inputMeterMaxLevel;
 const inputMeterRiseMs = 280;
 
 function inputMeterNow() {
@@ -387,36 +396,25 @@ const IpodSkipIcon = memo(function IpodSkipIcon({ direction }) {
   return (
     <svg className="ipod-skip-icon" aria-hidden="true" viewBox="0 0 32 32">
       <g transform={transform}>
-        <path d="M5.5 7.2 16.2 16 5.5 24.8Z" />
-        <path d="M13.4 7.2 24.1 16 13.4 24.8Z" />
+        <path d="M5.6 7.2 15.3 14.95 15.3 7.2 25.8 16 15.3 24.8 15.3 17.05 5.6 24.8Z" />
         <rect x="26.2" y="6.6" width="3.4" height="18.8" rx="1.15" />
       </g>
     </svg>
   );
 });
 
-const Tabs = memo(function Tabs({ tab, onChange, windowSizeMode, onWindowSizeModeChange }) {
+const Tabs = memo(function Tabs({ tab, onChange }) {
   const { t } = useI18n();
   const [open, setOpen] = useState(false);
-  const nextWindowSizeMode = windowSizeModes.find(mode => mode.id !== windowSizeMode) ?? windowSizeModes[0];
-  const nextWindowSizeModeLabel = t(`windowSize.${nextWindowSizeMode.id}`);
   const selectTab = useCallback((id) => {
     onChange(id);
     setOpen(false);
   }, [onChange]);
-  const selectWindowSizeMode = useCallback((id) => {
-    setOpen(false);
-    onWindowSizeModeChange(id);
-  }, [onWindowSizeModeChange]);
 
   useEffect(() => {
     document.documentElement.classList.toggle("side-nav-open", open);
     return () => document.documentElement.classList.remove("side-nav-open");
   }, [open]);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [windowSizeMode]);
 
   return (
     <nav className={`side-nav ${open ? "open" : ""}`} aria-label={t("nav.main")}>
@@ -463,18 +461,6 @@ const Tabs = memo(function Tabs({ tab, onChange, windowSizeMode, onWindowSizeMod
             );
           })}
         </div>
-        <div className="side-nav-size-controls" aria-label={t("nav.windowSize")}>
-          <button
-            className="side-nav-size-button"
-            type="button"
-            aria-label={t("nav.switchTo", { mode: nextWindowSizeModeLabel })}
-            title={t("nav.switchTo", { mode: nextWindowSizeModeLabel })}
-            onClick={() => selectWindowSizeMode(nextWindowSizeMode.id)}
-          >
-            <span className={`size-icon ${nextWindowSizeMode.id}`} aria-hidden="true" />
-            <span className="side-nav-size-text">{t("nav.switchTo", { mode: nextWindowSizeModeLabel })}</span>
-          </button>
-        </div>
       </div>
     </nav>
   );
@@ -493,8 +479,20 @@ const nixieDigitPaths = {
   9: "M76 82 C71 111 29 111 23 78 C16 42 44 18 68 32 C92 46 88 92 72 126 L58 160"
 };
 
+const nixieSymbolPaths = {
+  ...nixieDigitPaths,
+  "-": "M26 91 L74 91"
+};
+
+function formatNixieHourLabel(hour, maxHour, now = new Date()) {
+  const currentHour = clampActivityHour(maxHour);
+  const labelHour = String(clampActivityHour(hour)).padStart(2, "0");
+  if (hour !== currentHour) return `${labelHour}:--`;
+  return `${labelHour}:${String(now.getMinutes()).padStart(2, "0")}`;
+}
+
 const NixieDigit = memo(function NixieDigit({ value }) {
-  const digitPath = nixieDigitPaths[value] ?? nixieDigitPaths[0];
+  const digitPath = nixieSymbolPaths[value] ?? nixieDigitPaths[0];
   const ghostPath = nixieDigitPaths[8];
 
   return (
@@ -544,11 +542,18 @@ const TodayView = memo(function TodayView({
   onActivityHourChange
 }) {
   const { t } = useI18n();
+  const [nixieNow, setNixieNow] = useState(() => new Date());
   const selectedHour = clampActivityHour(activityHour, activityMaxHour);
   const ring = useMemo(() => activityRingState(activitySamples, selectedHour), [activitySamples, selectedHour]);
-  const selectedHourLabel = formatHourPoint(selectedHour);
+  const selectedHourLabel = formatNixieHourLabel(selectedHour, activityMaxHour, nixieNow);
   const [decorImageSrc, handleDecorImageError] = useStableImageSrc(deskDecorItem?.url ?? "");
   const [ringTooltip, setRingTooltip] = useState(null);
+
+  useEffect(() => {
+    const timer = setInterval(() => setNixieNow(new Date()), 1_000);
+    return () => clearInterval(timer);
+  }, []);
+
   const updateRingTooltip = useCallback((event) => {
     const rect = event.currentTarget.getBoundingClientRect();
     const centerX = rect.width / 2;
@@ -568,7 +573,7 @@ const TodayView = memo(function TodayView({
       Math.max(0, Math.floor(angle / (360 / ring.segments.length)))
     );
     const segment = ring.segments[segmentIndex];
-    if (!segment) {
+    if (!segment || segment.state === "future") {
       setRingTooltip(null);
       return;
     }
@@ -602,11 +607,13 @@ const TodayView = memo(function TodayView({
                   className={`ring-segment ${segment.state}`}
                   key={`${selectedHour}-${segment.index}`}
                   type="button"
-                  aria-label={t("today.segmentTitle", {
-                    label: segment.label,
-                    keyboard: segment.keyboardCount,
-                    mouse: segment.mouseClickCount
-                  })}
+                  aria-label={segment.state === "future"
+                    ? segment.label
+                    : t("today.segmentTitle", {
+                      label: segment.label,
+                      keyboard: segment.keyboardCount,
+                      mouse: segment.mouseClickCount
+                    })}
                   style={{ "--angle": `${segment.angle}deg` }}
                 />
               ))}

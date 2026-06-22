@@ -261,6 +261,154 @@ button:disabled {
   overflow-x: clip;
 }
 
+.rest-voyage-progress {
+  --voyage-track: rgba(31, 31, 31, 0.1);
+  --voyage-fill: rgba(31, 31, 31, 0.72);
+  --voyage-boat: #1f1f1f;
+  --voyage-sail: rgba(255, 255, 255, 0.92);
+  --voyage-star: var(--gold);
+  --voyage-wave: rgba(255, 255, 255, 0.26);
+  position: relative;
+  width: min(580px, 100%);
+  height: var(--toolbar-height);
+  flex: 1 1 auto;
+  min-width: 0;
+  align-self: center;
+  pointer-events: none;
+  overflow: visible;
+  box-shadow:
+    inset 0 1px 2px rgba(31, 31, 31, 0.14),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transform: translateY(2px);
+  animation: rest-voyage-enter 220ms ease-out both;
+}
+
+html[data-theme="dark"] .rest-voyage-progress {
+  --voyage-track: rgba(255, 255, 255, 0.12);
+  --voyage-fill: rgba(255, 255, 255, 0.86);
+  --voyage-boat: #f4f4ef;
+  --voyage-sail: rgba(20, 20, 19, 0.86);
+  --voyage-wave: rgba(0, 0, 0, 0.26);
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.58),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.08);
+}
+
+.rest-voyage-track {
+  position: absolute;
+  left: 9px;
+  right: 9px;
+  bottom: 4px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--voyage-track);
+  box-shadow:
+    inset 0 1px 2px color-mix(in srgb, var(--shadow-medium) 52%, transparent),
+    inset 0 -1px 0 color-mix(in srgb, var(--paper) 22%, transparent);
+}
+
+.rest-voyage-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--rest-voyage-progress);
+  min-width: 5px;
+  border-radius: inherit;
+  background: var(--voyage-fill);
+  overflow: hidden;
+  transition: width 520ms cubic-bezier(0.22, 0.68, 0.18, 1);
+}
+
+.rest-voyage-fill::before {
+  content: "";
+  position: absolute;
+  inset: -4px -28px -2px 0;
+  background:
+    radial-gradient(10px 5px at 8px 6px, var(--voyage-wave) 0 42%, transparent 45%) 0 0 / 22px 9px repeat-x,
+    radial-gradient(10px 5px at 2px 8px, var(--voyage-wave) 0 34%, transparent 38%) 11px 0 / 22px 9px repeat-x;
+  opacity: 0.68;
+  animation: rest-voyage-wave 1500ms linear infinite;
+}
+
+.rest-voyage-boat {
+  position: absolute;
+  left: clamp(14px, var(--rest-voyage-progress), calc(100% - 14px));
+  top: -8px;
+  width: 34px;
+  height: 22px;
+  display: block;
+  filter:
+    drop-shadow(0 2px 2px color-mix(in srgb, var(--shadow-medium) 66%, transparent))
+    drop-shadow(0 0 8px color-mix(in srgb, var(--shadow-soft) 72%, transparent));
+  transform: translate(-50%, -50%);
+  transform-origin: 50% 70%;
+  transition:
+    left 520ms cubic-bezier(0.22, 0.68, 0.18, 1),
+    transform 360ms ease,
+    opacity 220ms ease;
+}
+
+.rest-voyage-boat-icon {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: visible;
+  transform-origin: 50% 72%;
+}
+
+.rest-voyage-progress.sailing .rest-voyage-boat-icon {
+  animation: rest-voyage-sail 1800ms ease-in-out infinite;
+}
+
+.rest-voyage-hull {
+  fill: var(--voyage-boat);
+}
+
+.rest-voyage-sail {
+  fill: var(--voyage-sail);
+  stroke: var(--voyage-boat);
+  stroke-width: 1.8;
+  stroke-linejoin: round;
+}
+
+.rest-voyage-star {
+  fill: var(--voyage-star);
+  stroke: color-mix(in srgb, var(--paper) 54%, transparent);
+  stroke-width: 1;
+  transform-origin: 44px 11px;
+  transition: opacity 180ms ease, transform 240ms ease;
+}
+
+.rest-voyage-progress.complete .rest-voyage-fill {
+  background: var(--voyage-star);
+}
+
+.rest-voyage-progress.complete .rest-voyage-star {
+  animation: rest-voyage-star-pop 760ms ease-out both;
+}
+
+.rest-voyage-progress.failed .rest-voyage-fill {
+  background: color-mix(in srgb, #d92d20 72%, var(--voyage-fill));
+}
+
+.rest-voyage-progress.failed .rest-voyage-fill::before {
+  animation: none;
+  opacity: 0;
+}
+
+.rest-voyage-progress.failed .rest-voyage-boat {
+  transform: translate(-50%, -50%) rotate(180deg) translateY(3px);
+}
+
+.rest-voyage-progress.failed .rest-voyage-boat-icon {
+  animation: none;
+}
+
+.rest-voyage-progress.failed .rest-voyage-star {
+  opacity: 0;
+  transform: scale(0);
+}
+
 .app-chrome {
   display: contents;
 }
@@ -440,14 +588,48 @@ h2 {
   gap: 0;
   row-gap: 0;
   box-shadow:
-    inset 0 1px 1px color-mix(in srgb, var(--shadow-soft) 56%, transparent),
-    inset 0 -1px 0 color-mix(in srgb, var(--paper) 24%, transparent);
+    inset 0 1px 2px rgba(31, 31, 31, 0.14),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+}
+
+.topbar-activity-slot {
+  position: relative;
+  width: min(580px, 100%);
+  height: var(--toolbar-height);
+  flex: 1 1 auto;
+  min-width: 0;
+  align-self: center;
+  justify-self: center;
+  overflow: visible;
 }
 
 .topbar-input-meters {
   flex: 1 1 auto;
   min-width: 0;
   align-self: center;
+}
+
+.topbar-activity-slot > .topbar-input-meters {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.topbar-activity-slot > .rest-voyage-progress {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  flex: none;
+  align-self: auto;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .topbar-activity-slot > .rest-voyage-progress {
+  box-shadow: none;
 }
 
 .input-activity-meter {
@@ -461,6 +643,10 @@ h2 {
   background: transparent;
   box-shadow: none;
   overflow: hidden;
+}
+
+.input-activity-meter.mouse {
+  box-shadow: none;
 }
 
 .input-activity-meter:first-child {
@@ -500,12 +686,29 @@ h2 {
 
 .input-meter-cell.active {
   opacity: 1;
-  background: var(--gold);
+  background: #111111;
   box-shadow: none;
 }
 
 .input-activity-meter.mouse .input-meter-cell.active {
-  background: var(--gold);
+  background: #ffffff;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .input-activity-meters {
+  box-shadow:
+    inset 0 1px 2px rgba(0, 0, 0, 0.58),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme="dark"] .input-meter-cell.active {
+  background: #050505;
+  box-shadow: none;
+}
+
+html[data-theme="dark"] .input-activity-meter.mouse .input-meter-cell.active {
+  background: #f4f4ef;
+  box-shadow: none;
 }
 
 .tip-marquee-track {
@@ -540,6 +743,7 @@ h2 {
   justify-items: center;
   overflow: visible;
   text-align: center;
+  line-break: strict;
   white-space: normal;
   word-break: break-word;
   overflow-wrap: anywhere;
@@ -563,6 +767,52 @@ h2 {
 
   to {
     clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes rest-voyage-enter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rest-voyage-sail {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1.2deg);
+  }
+
+  35% {
+    transform: translateY(-2px) rotate(1.4deg);
+  }
+
+  68% {
+    transform: translateY(1px) rotate(-0.6deg);
+  }
+}
+
+@keyframes rest-voyage-wave {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(22px);
+  }
+}
+
+@keyframes rest-voyage-star-pop {
+  0% {
+    transform: scale(1);
+  }
+
+  48% {
+    transform: scale(1.28) rotate(10deg);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
 
@@ -748,66 +998,6 @@ h2 {
   opacity: 1;
 }
 
-.side-nav-size-controls {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  padding-top: 10px;
-  border-top: 1px solid var(--line-subtle);
-}
-
-.side-nav-size-button {
-  height: 34px;
-  min-width: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  padding: 0 10px;
-  border: 1px solid var(--line-subtle);
-  border-radius: 7px;
-  background: var(--paper-glass);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 650;
-  box-shadow: 0 1px 2px var(--shadow-soft);
-  transition: background 140ms ease, color 140ms ease, border-color 140ms ease, box-shadow 140ms ease;
-}
-
-.side-nav-size-button:hover {
-  background: var(--paper-strong-glass);
-  color: var(--ink);
-}
-
-.side-nav-size-button.active {
-  border-color: var(--ink);
-  background: var(--paper);
-  color: var(--ink);
-  box-shadow: 0 1px 3px var(--shadow-soft);
-}
-
-.size-icon {
-  display: block;
-  border: 2px solid currentColor;
-  border-radius: 3px;
-}
-
-.size-icon.mini {
-  width: 14px;
-  height: 14px;
-}
-
-.size-icon.wide {
-  width: 22px;
-  height: 14px;
-}
-
-.side-nav-size-text {
-  min-width: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
 .view {
   display: none;
 }
@@ -846,7 +1036,7 @@ h2 {
   border-radius: 50%;
   background: var(--segments, conic-gradient(var(--watch-ring-track) 0 360deg));
   box-shadow: 0 26px 80px rgba(31, 31, 31, 0.1);
-  overflow: hidden;
+  overflow: visible;
   transform-origin: center;
   will-change: transform, opacity, filter;
 }
@@ -1069,7 +1259,11 @@ h2 {
   .view.active[data-view="today"] .watch-ring,
   .watch-ring-bagua,
   .watch-ring-center::before,
-  .watch-ring-center::after {
+  .watch-ring-center::after,
+  .rest-voyage-progress,
+  .rest-voyage-progress.sailing .rest-voyage-boat-icon,
+  .rest-voyage-fill::before,
+  .rest-voyage-progress.complete .rest-voyage-star {
     animation: none;
   }
 
@@ -1077,6 +1271,17 @@ h2 {
     opacity: 1;
     filter: none;
     transform: none;
+  }
+
+  .rest-voyage-progress {
+    opacity: 1;
+    transform: none;
+  }
+
+  .rest-voyage-fill,
+  .rest-voyage-boat,
+  .rest-voyage-star {
+    transition: none;
   }
 
   .watch-ring-center::before {
@@ -1167,6 +1372,50 @@ h2 {
   color: rgba(255, 255, 255, 0.68);
   background: color-mix(in srgb, var(--soft) 36%, transparent);
   opacity: 0.68;
+}
+
+html[data-theme="light"] .ring-controls button {
+  border-color: rgba(31, 31, 31, 0.1);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(239, 239, 236, 0.32) 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.46),
+    inset 0 -1px 0 rgba(31, 31, 31, 0.05);
+  color: rgba(31, 31, 31, 0.68);
+  opacity: 1;
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.42),
+    0 0 5px rgba(255, 255, 255, 0.24);
+}
+
+html[data-theme="light"] .ring-controls button:hover,
+html[data-theme="light"] .ring-controls button:focus-visible {
+  border-color: rgba(31, 31, 31, 0.16);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.78) 0%,
+      rgba(239, 239, 236, 0.58) 100%
+    );
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.78),
+    inset 0 -1px 0 rgba(31, 31, 31, 0.08),
+    0 1px 8px rgba(31, 31, 31, 0.08);
+}
+
+html[data-theme="light"] .ring-controls button:disabled {
+  color: rgba(31, 31, 31, 0.32);
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.34) 0%,
+      rgba(239, 239, 236, 0.24) 100%
+    );
+  opacity: 0.72;
 }
 
 .ring-hour-label {
@@ -2571,7 +2820,7 @@ textarea {
     height: var(--toolbar-height);
   }
 
-  .topbar-input-meters {
+  .topbar-activity-slot {
     grid-column: 1;
   }
 

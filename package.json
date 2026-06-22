@@ -1,11 +1,13 @@
 {
   "name": "fate",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "tauri dev --config src-tauri/tauri.dev.conf.json",
     "build": "tauri build",
+    "decor:build": "node scripts/build-desk-decor.mjs",
+    "decor-bg:build": "node scripts/build-desk-decor-bg.mjs",
     "web:dev": "vite --host 127.0.0.1",
     "web:build": "vite build",
     "preview": "vite preview"

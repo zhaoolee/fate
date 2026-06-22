@@ -180,11 +180,6 @@ export const tabs = [
   ["settings", "设置", "设", "settings"]
 ];
 
-export const windowSizeModes = [
-  { id: "mini", label: "迷你版" },
-  { id: "wide", label: "宽屏版" }
-];
-
 export const appearanceModes = [
   { id: "system", label: "跟随系统" },
   { id: "light", label: "亮色模式" },
@@ -197,34 +192,12 @@ export const languageModes = [
   { id: "en", label: "英文" }
 ];
 
-export const mainWindowLogicalSizes = {
-  mini: { width: 390, height: 631 },
-  wide: { width: 960, height: 640 }
-};
-
 export function normalizeAppearanceMode(value) {
   return appearanceModes.some(mode => mode.id === value) ? value : "system";
 }
 
 export function normalizeLanguageMode(value) {
   return languageModes.some(mode => mode.id === value) ? value : "system";
-}
-
-export function normalizeWindowSizeMode(value) {
-  return windowSizeModes.some(mode => mode.id === value) ? value : "mini";
-}
-
-export function inferWindowSizeModeFromSize(size = {}) {
-  const width = Number(size.width ?? 0);
-  const height = Number(size.height ?? 0);
-  const widthThreshold = (mainWindowLogicalSizes.mini.width + mainWindowLogicalSizes.wide.width) / 2;
-  const heightThreshold = (mainWindowLogicalSizes.mini.height + mainWindowLogicalSizes.wide.height) / 2;
-  return width >= widthThreshold || height >= heightThreshold ? "wide" : "mini";
-}
-
-export function viewportWindowSizeMode() {
-  if (typeof window === "undefined") return "mini";
-  return inferWindowSizeModeFromSize({ width: window.innerWidth, height: window.innerHeight });
 }
 
 export function load(key, fallback) {
@@ -441,6 +414,9 @@ export function deskDecorChoiceFromTips(tips, items = deskDecorItems) {
     name: deskDecorStem(item),
     fileName: String(item?.name ?? "")
   }));
+  const prefixCandidates = [...candidates].sort((left, right) => (
+    Math.max(right.name.length, right.fileName.length) - Math.max(left.name.length, left.fileName.length)
+  ));
 
   for (const tip of choices) {
     const text = cleanTipText(tip);
@@ -450,7 +426,7 @@ export function deskDecorChoiceFromTips(tips, items = deskDecorItems) {
     const normalizedName = deskDecorStem(rawName.trim());
     const match =
       candidates.find(candidate => normalizedName === candidate.name || normalizedName === deskDecorStem(candidate.fileName)) ??
-      candidates.find(candidate => text.startsWith(candidate.fileName) || text.startsWith(candidate.name));
+      prefixCandidates.find(candidate => text.startsWith(candidate.fileName) || text.startsWith(candidate.name));
 
     if (!match) continue;
 

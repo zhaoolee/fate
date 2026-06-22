@@ -25,7 +25,6 @@ import {
   clampActivityHour,
   currentMaxActivityHour,
   currentRoute,
-  currentWindowInfo,
   defaultSettings,
   deskDecorBackgrounds,
   deskDecorChoiceFromTips,
@@ -33,7 +32,6 @@ import {
   deskDecorStem,
   deskDecorUnlockStates,
   effectiveAiConfig,
-  inferWindowSizeModeFromSize,
   initialAiExtraPrompts,
   initialAiResultDays,
   initialAiResults,
@@ -56,14 +54,12 @@ import {
   normalizeSettings,
   normalizeSnapshot,
   normalizeTips,
-  normalizeWindowSizeMode,
   normalizeAppearanceMode,
   pickDeskBackgroundIndex,
   save,
   syncHealthTips,
   todayKey,
-  todayTotals,
-  viewportWindowSizeMode
+  todayTotals
 } from "./app/domain";
 import { preloadImage, preloadImages } from "./app/images";
 import {
@@ -74,6 +70,67 @@ import {
   replaceAiTipHistoryInDb
 } from "./app/persistence";
 import { I18nProvider, languageLocales, resolveLanguage } from "./app/i18n";
+
+function shouldKeepSpaceKeyDefault(target) {
+  if (!(target instanceof Element)) return false;
+  return Boolean(target.closest([
+    "input",
+    "textarea",
+    "select",
+    "button",
+    "a[href]",
+    "[contenteditable]:not([contenteditable='false'])",
+    "[role='button']",
+    "[role='tab']",
+    "[role='menuitem']",
+    "[role='switch']",
+    "[role='checkbox']",
+    "[role='radio']"
+  ].join(",")));
+}
+
+function restVoyageProgress(snapshot) {
+  const restGoalSecs = Math.max(1, Number(snapshot.restGoalSecs ?? defaultSettings.restMinutes * 60));
+  const idleSecs = Math.max(0, Number(snapshot.idleSecs ?? 0));
+  return {
+    idleSecs,
+    restGoalSecs,
+    progress: Math.min(1, idleSecs / restGoalSecs)
+  };
+}
+
+function RestVoyageProgress({ voyage }) {
+  if (!voyage) return null;
+
+  const progress = Math.min(1, Math.max(0, Number(voyage.progress ?? 0)));
+  const status = voyage.status ?? "sailing";
+  const ariaLabel = status === "failed"
+    ? "休息被打断，星星未送达"
+    : status === "complete"
+      ? "休息完成，获得一颗星星"
+      : "休息进度进行中";
+
+  return (
+    <div
+      className={`rest-voyage-progress ${status}`}
+      aria-label={ariaLabel}
+      aria-live="polite"
+      style={{ "--rest-voyage-progress": `${progress * 100}%` }}
+    >
+      <div className="rest-voyage-track">
+        <span className="rest-voyage-fill" />
+        <span className="rest-voyage-boat" aria-hidden="true">
+          <svg viewBox="0 0 64 38" className="rest-voyage-boat-icon">
+            <path className="rest-voyage-sail main" d="M29 6 29 21 13 21Z" />
+            <path className="rest-voyage-sail side" d="M33 9 50 21 33 21Z" />
+            <path className="rest-voyage-hull" d="M8 22H57L48 32H18Z" />
+            <path className="rest-voyage-star" d="M44 0.8 47 6.9 53.8 7.9 48.9 12.6 50.1 19.4 44 16.2 37.9 19.4 39.1 12.6 34.2 7.9 41 6.9Z" />
+          </svg>
+        </span>
+      </div>
+    </div>
+  );
+}
 
 export default function App() {
   const [tab, setTab] = useState("today");
@@ -102,8 +159,8 @@ export default function App() {
   const [toolsMessage, setToolsMessage] = useState("");
   const [toolsDebug, setToolsDebug] = useState(null);
   const [windowPinned, setWindowPinned] = useState(() => Boolean(load("fate:windowPinned", false)));
-  const [windowSizeMode, setWindowSizeMode] = useState(() => viewportWindowSizeMode());
   const [deskBgIndex, setDeskBgIndex] = useState(() => normalizeDeskBackgroundIndex(load("fate:deskBackgroundIndex", -1)));
+  const [restVoyage, setRestVoyage] = useState(null);
   const deskBackgroundUrl = deskDecorBackgrounds[deskBgIndex] ?? "";
   const [deskBackgroundReady, setDeskBackgroundReady] = useState(false);
   const [deskBackgroundPaintKey, setDeskBackgroundPaintKey] = useState(0);
@@ -125,8 +182,9 @@ export default function App() {
   const aiExtraPromptsRef = useRef(aiExtraPrompts);
   const aiAutoAttemptKeyRef = useRef({});
   const aiRequestInFlightRef = useRef({});
-  const achievementPendingRef = useRef(Boolean(load("fate:achievementPending", false)));
-  const lastReminderCountRef = useRef(Number(initialSnapshot.reminderCount ?? 0));
+  const achievementPendingRef = useRef(false);
+  const restVoyageRef = useRef(null);
+  const restVoyageHideTimerRef = useRef(0);
   const deskBackgroundPaintFrameRef = useRef(0);
 
   useEffect(() => {
@@ -193,6 +251,21 @@ export default function App() {
   }, [snapshot]);
 
   useEffect(() => {
+    save("fate:achievementPending", false);
+  }, []);
+
+  useEffect(() => {
+    const stopSpaceScroll = event => {
+      if (event.defaultPrevented || (event.key !== " " && event.code !== "Space")) return;
+      if (shouldKeepSpaceKeyDefault(event.target)) return;
+      event.preventDefault();
+    };
+
+    window.addEventListener("keydown", stopSpaceScroll, { capture: true });
+    return () => window.removeEventListener("keydown", stopSpaceScroll, { capture: true });
+  }, []);
+
+  useEffect(() => {
     let disposed = false;
     let unlisten = null;
 
@@ -242,55 +315,6 @@ export default function App() {
   useEffect(() => {
     activitySamplesRef.current = activitySamples;
   }, [activitySamples]);
-
-  const syncWindowSizeModeFromActual = useCallback(async (physicalSize = null) => {
-    const { window: tauriWindow, label } = currentWindowInfo();
-    if (!tauriWindow || label !== "main") {
-      setWindowSizeMode(viewportWindowSizeMode());
-      return;
-    }
-
-    try {
-      const scaleFactor = Number(await tauriWindow.scaleFactor()) || 1;
-      const size = physicalSize ?? await tauriWindow.outerSize();
-      setWindowSizeMode(inferWindowSizeModeFromSize({
-        width: Number(size.width) / scaleFactor,
-        height: Number(size.height) / scaleFactor
-      }));
-    } catch {
-      setWindowSizeMode(viewportWindowSizeMode());
-    }
-  }, []);
-
-  useEffect(() => {
-    const { window: tauriWindow, label } = currentWindowInfo();
-    if (!tauriWindow || label !== "main") {
-      const syncFromViewport = () => setWindowSizeMode(viewportWindowSizeMode());
-      syncFromViewport();
-      window.addEventListener("resize", syncFromViewport);
-      return () => window.removeEventListener("resize", syncFromViewport);
-    }
-
-    let cancelled = false;
-    let removeResizeListener = null;
-    syncWindowSizeModeFromActual();
-    tauriWindow.onResized(({ payload }) => {
-      if (!cancelled) syncWindowSizeModeFromActual(payload);
-    })
-      .then(unlisten => {
-        if (cancelled) {
-          unlisten();
-        } else {
-          removeResizeListener = unlisten;
-        }
-      })
-      .catch(() => {});
-
-    return () => {
-      cancelled = true;
-      if (removeResizeListener) removeResizeListener();
-    };
-  }, [syncWindowSizeModeFromActual]);
 
   useEffect(() => {
     let hideTimer = 0;
@@ -493,17 +517,100 @@ export default function App() {
     });
   }, []);
 
-  const recordAchievementProgress = useCallback((nextSnapshot) => {
-    const reminderCount = Math.max(0, Number(nextSnapshot.reminderCount ?? 0));
-    const previousReminderCount = Math.max(0, Number(lastReminderCountRef.current ?? 0));
-    if (reminderCount > previousReminderCount) {
-      achievementPendingRef.current = true;
-      save("fate:achievementPending", true);
+  useEffect(() => (
+    () => {
+      window.clearTimeout(restVoyageHideTimerRef.current);
     }
-    lastReminderCountRef.current = reminderCount;
+  ), []);
 
-    const restGoalSecs = Math.max(1, Number(nextSnapshot.restGoalSecs ?? defaultSettings.restMinutes * 60));
-    const idleSecs = Math.max(0, Number(nextSnapshot.idleSecs ?? 0));
+  const hideRestVoyageAfter = useCallback((delayMs) => {
+    window.clearTimeout(restVoyageHideTimerRef.current);
+    restVoyageHideTimerRef.current = window.setTimeout(() => {
+      restVoyageRef.current = null;
+      setRestVoyage(null);
+    }, delayMs);
+  }, []);
+
+  const updateRestVoyage = useCallback((nextVoyage) => {
+    window.clearTimeout(restVoyageHideTimerRef.current);
+    restVoyageRef.current = nextVoyage;
+    setRestVoyage(nextVoyage);
+  }, []);
+
+  const startRestVoyage = useCallback((payload, prefix = "rest") => {
+    const currentSnapshot = snapshotRef.current;
+    const progressState = restVoyageProgress(currentSnapshot);
+    achievementPendingRef.current = true;
+    save("fate:achievementPending", true);
+    updateRestVoyage({
+      id: `${prefix}-${Date.now()}`,
+      status: "sailing",
+      progress: progressState.progress,
+      idleSecs: progressState.idleSecs,
+      restGoalSecs: progressState.restGoalSecs,
+      lastEventUnixMs: Number(payload?.lastEventUnixMs ?? currentSnapshot.lastEventUnixMs ?? Date.now())
+    });
+  }, [updateRestVoyage]);
+
+  useEffect(() => {
+    let unlistenStart = null;
+    let unlistenPreviewStart = null;
+
+    listen("rest-voyage://start", event => {
+      startRestVoyage(event.payload, "rest");
+    }).then(callback => {
+      unlistenStart = callback;
+    }).catch(() => {});
+
+    listen("rest-voyage://preview-start", event => {
+      startRestVoyage(event.payload, "preview");
+    }).then(callback => {
+      unlistenPreviewStart = callback;
+    }).catch(() => {});
+
+    return () => {
+      if (unlistenStart) unlistenStart();
+      if (unlistenPreviewStart) unlistenPreviewStart();
+    };
+  }, [startRestVoyage]);
+
+  const finishRestVoyage = useCallback((status, progress = null) => {
+    const current = restVoyageRef.current;
+    if (!current || current.status !== "sailing") return;
+    const nextVoyage = {
+      ...current,
+      status,
+      progress: progress == null ? current.progress : progress
+    };
+    restVoyageRef.current = nextVoyage;
+    setRestVoyage(nextVoyage);
+    hideRestVoyageAfter(status === "failed" ? 1500 : 2200);
+  }, [hideRestVoyageAfter]);
+
+  const recordAchievementProgress = useCallback((nextSnapshot) => {
+    const progressState = restVoyageProgress(nextSnapshot);
+    const restGoalSecs = progressState.restGoalSecs;
+    const idleSecs = progressState.idleSecs;
+    const currentVoyage = restVoyageRef.current;
+    if (currentVoyage?.status === "sailing") {
+      const lastEventUnixMs = Number(nextSnapshot.lastEventUnixMs ?? 0);
+      const interrupted = lastEventUnixMs > Number(currentVoyage.lastEventUnixMs ?? 0) && idleSecs < restGoalSecs;
+      if (interrupted) {
+        achievementPendingRef.current = false;
+        save("fate:achievementPending", false);
+        finishRestVoyage("failed", currentVoyage.progress);
+        return;
+      }
+
+      restVoyageRef.current = {
+        ...currentVoyage,
+        progress: progressState.progress,
+        idleSecs,
+        restGoalSecs
+      };
+      setRestVoyage(restVoyageRef.current);
+    }
+
     const completedPromptedRest =
       achievementPendingRef.current &&
       nextSnapshot.status === "resting" &&
@@ -513,12 +620,13 @@ export default function App() {
 
     achievementPendingRef.current = false;
     save("fate:achievementPending", false);
+    finishRestVoyage("complete", 1);
     setAchievementCount(previous => {
       const next = normalizeAchievementCount(previous) + 1;
       save("fate:achievementCount", next);
       return next;
     });
-  }, []);
+  }, [finishRestVoyage]);
 
   const updateAchievementCount = useCallback((value) => {
     const next = normalizeAchievementCount(value);
@@ -968,13 +1076,6 @@ export default function App() {
   );
   const tickerItems = useMemo(() => marqueeTipItems(aiResults), [aiResults]);
   const showInputPermissionOverlay = needsInputMonitorPermissionAction(inputMonitorPermission);
-  const changeWindowSizeMode = useCallback((mode) => {
-    const nextMode = normalizeWindowSizeMode(mode);
-    invoke("set_main_window_size_mode", { mode: nextMode })
-      .then(() => window.setTimeout(() => syncWindowSizeModeFromActual(), 80))
-      .catch(() => syncWindowSizeModeFromActual());
-  }, [syncWindowSizeModeFromActual]);
-
   return (
     <I18nProvider language={resolvedLanguage}>
       <div className="app-frame">
@@ -1007,12 +1108,11 @@ export default function App() {
           <Tabs
             tab={tab}
             onChange={setTab}
-            windowSizeMode={windowSizeMode}
-            onWindowSizeModeChange={changeWindowSizeMode}
           />
           <Header
             pinned={windowPinned}
             snapshot={snapshot}
+            activitySlot={restVoyage ? <RestVoyageProgress voyage={restVoyage} /> : null}
             onPinnedChange={setPinned}
           />
         </div>

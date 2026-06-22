@@ -23,17 +23,13 @@ use overlay::{
 };
 use tauri::Manager;
 use tauri_plugin_sql::{Migration, MigrationKind};
-use window::{
-    set_main_window_pinned, set_main_window_size_mode, start_main_window_geometry_guard,
-    MainWindowSizeMode,
-};
+use window::{set_main_window_pinned, start_main_window_geometry_guard};
 
 fn main() {
     let monitor = Arc::new(Mutex::new(ActivityMonitor::new()));
     let health_tips = Arc::new(Mutex::new(Vec::<String>::new()));
     let overlay_tip = Arc::new(Mutex::new(String::new()));
     let input_counts = Arc::new(Mutex::new(InputEventCounts::default()));
-    let window_size_mode = Arc::new(Mutex::new(MainWindowSizeMode::Mini));
     let migrations = vec![
         Migration {
             version: 1,
@@ -86,7 +82,6 @@ fn main() {
         .manage(health_tips.clone())
         .manage(overlay_tip.clone())
         .manage(input_counts.clone())
-        .manage(window_size_mode.clone())
         .plugin(
             tauri_plugin_sql::Builder::default()
                 .add_migrations("sqlite:fate.db", migrations)
@@ -116,7 +111,6 @@ fn main() {
             get_break_overlay_tip,
             close_break_overlay_preview,
             set_main_window_pinned,
-            set_main_window_size_mode,
             complete_break_reminder
         ])
         .setup(move |app| {
@@ -127,7 +121,7 @@ fn main() {
                 );
                 let _ = window.set_title(&title);
             }
-            start_main_window_geometry_guard(app.handle().clone(), window_size_mode.clone());
+            start_main_window_geometry_guard(app.handle().clone());
             ensure_input_event_counter(input_counts.clone());
             start_input_activity_emitter(app.handle().clone(), input_counts.clone());
             start_activity_monitor(

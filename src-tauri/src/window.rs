@@ -2,38 +2,11 @@ use std::{
     thread,
     time::Duration,
 };
-use tauri::{AppHandle, LogicalSize, Manager, State};
-
-use crate::shared::SharedMainWindowSizeMode;
+use tauri::{AppHandle, LogicalSize, Manager};
 
 const MAIN_WINDOW_MINI_WIDTH: f64 = 390.0;
 const MAIN_WINDOW_MINI_HEIGHT: f64 = 631.0;
-const MAIN_WINDOW_WIDE_WIDTH: f64 = 960.0;
-const MAIN_WINDOW_WIDE_HEIGHT: f64 = 640.0;
 const MAIN_WINDOW_MIN_SIDE: f64 = 320.0;
-
-#[derive(Clone, Copy, PartialEq, Eq)]
-pub enum MainWindowSizeMode {
-    Mini,
-    Wide,
-}
-
-impl MainWindowSizeMode {
-    fn parse(value: &str) -> Result<Self, String> {
-        match value {
-            "mini" => Ok(Self::Mini),
-            "wide" => Ok(Self::Wide),
-            _ => Err("未知窗口尺寸模式".to_string()),
-        }
-    }
-
-    fn outer_size(self) -> (f64, f64) {
-        match self {
-            Self::Mini => (MAIN_WINDOW_MINI_WIDTH, MAIN_WINDOW_MINI_HEIGHT),
-            Self::Wide => (MAIN_WINDOW_WIDE_WIDTH, MAIN_WINDOW_WIDE_HEIGHT),
-        }
-    }
-}
 
 #[derive(Clone, Copy)]
 #[cfg(not(target_os = "macos"))]
@@ -54,68 +27,42 @@ pub fn set_main_window_pinned(app: AppHandle, pinned: bool) -> Result<(), String
         .map_err(|error| error.to_string())
 }
 
-#[tauri::command]
-pub fn set_main_window_size_mode(
-    app: AppHandle,
-    size_mode: State<SharedMainWindowSizeMode>,
-    mode: String,
-) -> Result<(), String> {
-    let next_mode = MainWindowSizeMode::parse(&mode)?;
-    {
-        let mut current_mode = size_mode
-            .lock()
-            .map_err(|_| "窗口尺寸状态不可用".to_string())?;
-        *current_mode = next_mode;
-    }
-    schedule_main_window_geometry(&app, size_mode.inner().clone(), true);
-    Ok(())
-}
-
-pub fn start_main_window_geometry_guard(app: AppHandle, size_mode: SharedMainWindowSizeMode) {
-    schedule_main_window_geometry(&app, size_mode.clone(), false);
+pub fn start_main_window_geometry_guard(app: AppHandle) {
+    schedule_main_window_geometry(&app, false);
 
     thread::spawn(move || {
         for _ in 0..3 {
             thread::sleep(Duration::from_millis(120));
-            schedule_main_window_geometry(&app, size_mode.clone(), false);
+            schedule_main_window_geometry(&app, false);
         }
     });
 }
 
-fn schedule_main_window_geometry(
-    app: &AppHandle,
-    size_mode: SharedMainWindowSizeMode,
-    animate: bool,
-) {
+fn schedule_main_window_geometry(app: &AppHandle, animate: bool) {
     let app = app.clone();
     let _ = app.run_on_main_thread({
         let app = app.clone();
-        move || apply_main_window_geometry(&app, size_mode, animate)
+        move || apply_main_window_geometry(&app, animate)
     });
 }
 
-fn apply_main_window_geometry(app: &AppHandle, size_mode: SharedMainWindowSizeMode, animate: bool) {
+fn apply_main_window_geometry(app: &AppHandle, animate: bool) {
     let Some(window) = app.get_webview_window("main") else {
         return;
     };
-    let mode = size_mode
-        .lock()
-        .map(|guard| *guard)
-        .unwrap_or(MainWindowSizeMode::Mini);
 
     let _ = window.set_min_size(Some(LogicalSize::new(
         MAIN_WINDOW_MIN_SIDE,
         MAIN_WINDOW_MIN_SIDE,
     )));
     let _ = window.set_resizable(false);
-    apply_main_window_frame(app, &window, mode, animate);
+    apply_main_window_frame(app, &window, animate);
 }
 
 #[cfg(target_os = "macos")]
 fn apply_main_window_frame(
     _app: &AppHandle,
     window: &tauri::WebviewWindow,
-    mode: MainWindowSizeMode,
     animate: bool,
 ) {
     use objc2::MainThreadMarker;
@@ -135,9 +82,8 @@ fn apply_main_window_frame(
             return;
         };
         let current_frame = ns_window.frame();
-        let (target_width, target_height) = mode.outer_size();
-        let width = target_width.min(visible_frame.size.width).max(1.0);
-        let height = target_height.min(visible_frame.size.height).max(1.0);
+        let width = MAIN_WINDOW_MINI_WIDTH.min(visible_frame.size.width).max(1.0);
+        let height = MAIN_WINDOW_MINI_HEIGHT.min(visible_frame.size.height).max(1.0);
         if width <= 0.0 || height <= 0.0 {
             return;
         }
@@ -159,7 +105,6 @@ fn apply_main_window_frame(
 fn apply_main_window_frame(
     app: &AppHandle,
     window: &tauri::WebviewWindow,
-    mode: MainWindowSizeMode,
     _animate: bool,
 ) {
     let scale = window.scale_factor().unwrap_or(1.0);
@@ -170,9 +115,8 @@ fn apply_main_window_frame(
         ),
         _ => (0.0, 0.0),
     };
-    let (target_width, target_height) = mode.outer_size();
-    let inner_width = (target_width - chrome_width).max(MAIN_WINDOW_MIN_SIDE);
-    let inner_height = (target_height - chrome_height).max(MAIN_WINDOW_MIN_SIDE);
+    let inner_width = (MAIN_WINDOW_MINI_WIDTH - chrome_width).max(MAIN_WINDOW_MIN_SIDE);
+    let inner_height = (MAIN_WINDOW_MINI_HEIGHT - chrome_height).max(MAIN_WINDOW_MIN_SIDE);
     let _ = window.set_size(LogicalSize::new(inner_width, inner_height));
 
     let screen = main_work_area_bounds(app).unwrap_or(ScreenBounds {

@@ -29,6 +29,12 @@ pub struct OverlayDebugReport {
     notes: Vec<String>,
 }
 
+#[derive(Clone, Serialize)]
+#[serde(rename_all = "camelCase")]
+pub struct RestVoyageStart {
+    last_event_unix_ms: u128,
+}
+
 #[tauri::command]
 pub fn complete_break_reminder(
     app: AppHandle,
@@ -47,6 +53,13 @@ pub fn complete_break_reminder(
 
     app.emit("activity://snapshot", &snapshot)
         .map_err(|error| error.to_string())?;
+    app.emit(
+        "rest-voyage://start",
+        RestVoyageStart {
+            last_event_unix_ms: input_counts.last_event_unix_ms,
+        },
+    )
+    .map_err(|error| error.to_string())?;
     Ok(snapshot)
 }
 
@@ -73,8 +86,19 @@ pub fn get_break_overlay_tip(overlay_tip: State<SharedOverlayTip>) -> String {
 }
 
 #[tauri::command]
-pub fn close_break_overlay_preview(app: AppHandle) -> Result<(), String> {
+pub fn close_break_overlay_preview(
+    app: AppHandle,
+    input_counts: State<SharedInputCounts>,
+) -> Result<(), String> {
     destroy_overlay_window(&app, "break-overlay-preview")?;
+    let input_counts = input_event_counts(&input_counts);
+    app.emit(
+        "rest-voyage://preview-start",
+        RestVoyageStart {
+            last_event_unix_ms: input_counts.last_event_unix_ms,
+        },
+    )
+    .map_err(|error| error.to_string())?;
     Ok(())
 }
 pub fn show_break_overlay(
