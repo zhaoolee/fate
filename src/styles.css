@@ -2597,18 +2597,25 @@ textarea {
     -webkit-text-stroke-width: 1.25px;
   }
 
+  .today-tip-marquee .tip-marquee-text.lines-3 {
+    transform: translateY(14px);
+  }
+
   .ring-controls {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 3;
+    align-items: end;
   }
 
   .ring-hour-label {
+    align-items: flex-end;
     font-size: 64px;
     font-weight: 680;
     transform: scaleY(1.12);
+    transform-origin: right bottom;
   }
 }
 

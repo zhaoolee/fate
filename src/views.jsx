@@ -250,7 +250,7 @@ const KaraokeText = memo(function KaraokeText({ text, durationMs }) {
 
   return (
     <span
-      className="tip-marquee-text"
+      className={`tip-marquee-text lines-${Math.min(3, lines.length)}`}
       ref={textRef}
       aria-label={text}
       style={{ "--tip-karaoke-line-duration": `${lineDuration}ms` }}
