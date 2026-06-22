@@ -121,7 +121,10 @@ fn main() {
         ])
         .setup(move |app| {
             if let Some(window) = app.get_webview_window("main") {
-                let title = versioned_main_window_title(&app.package_info().version.to_string());
+                let title = versioned_main_window_title(
+                    &app.package_info().name,
+                    &app.package_info().version.to_string(),
+                );
                 let _ = window.set_title(&title);
             }
             start_main_window_geometry_guard(app.handle().clone(), window_size_mode.clone());

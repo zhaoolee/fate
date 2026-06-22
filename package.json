@@ -1,10 +1,10 @@
 {
   "name": "fate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "tauri dev",
+    "dev": "tauri dev --config src-tauri/tauri.dev.conf.json",
     "build": "tauri build",
     "web:dev": "vite --host 127.0.0.1",
     "web:build": "vite build",

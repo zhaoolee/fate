@@ -847,6 +847,12 @@ h2 {
   background: var(--segments, conic-gradient(var(--watch-ring-track) 0 360deg));
   box-shadow: 0 26px 80px rgba(31, 31, 31, 0.1);
   overflow: hidden;
+  transform-origin: center;
+  will-change: transform, opacity, filter;
+}
+
+.view.active[data-view="today"] .watch-ring {
+  animation: watch-ring-pop-in 680ms cubic-bezier(0.2, 0.82, 0.18, 1) both;
 }
 
 .ring-segment-layer {
@@ -875,10 +881,6 @@ h2 {
 }
 
 .ring-segment.idle {
-  background: transparent;
-}
-
-.ring-segment.unknown {
   background: transparent;
 }
 
@@ -1015,6 +1017,26 @@ h2 {
   }
 }
 
+@keyframes watch-ring-pop-in {
+  0% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(0.86) translateZ(0);
+  }
+
+  64% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1.018) translateZ(0);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(1) translateZ(0);
+  }
+}
+
 @keyframes decor-image-breathe {
   0%,
   100% {
@@ -1044,10 +1066,17 @@ h2 {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .view.active[data-view="today"] .watch-ring,
   .watch-ring-bagua,
   .watch-ring-center::before,
   .watch-ring-center::after {
     animation: none;
+  }
+
+  .watch-ring {
+    opacity: 1;
+    filter: none;
+    transform: none;
   }
 
   .watch-ring-center::before {

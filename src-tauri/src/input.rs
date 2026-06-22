@@ -84,19 +84,21 @@ impl Default for WinMsg {
 
 #[tauri::command]
 pub fn get_input_monitor_permission_status(
+    app: AppHandle,
     input_counts: State<SharedInputCounts>,
 ) -> InputMonitorPermissionStatus {
     ensure_input_event_counter(input_counts.inner().clone());
-    input_monitor_permission_status(&input_counts)
+    input_monitor_permission_status(&input_counts, &app.package_info().name)
 }
 
 #[tauri::command]
 pub fn request_input_monitor_permission(
+    app: AppHandle,
     input_counts: State<SharedInputCounts>,
 ) -> InputMonitorPermissionStatus {
     request_input_event_access();
     ensure_input_event_counter(input_counts.inner().clone());
-    let status = input_monitor_permission_status(&input_counts);
+    let status = input_monitor_permission_status(&input_counts, &app.package_info().name);
     open_input_monitoring_settings();
     status
 }
@@ -155,7 +157,11 @@ pub fn start_input_activity_emitter(app: AppHandle, input_counts: SharedInputCou
 
 fn input_monitor_permission_status(
     input_counts: &SharedInputCounts,
+    app_name: &str,
 ) -> InputMonitorPermissionStatus {
+    #[cfg(not(target_os = "macos"))]
+    let _ = app_name;
+
     let counts = input_event_counts(input_counts);
 
     #[cfg(target_os = "macos")]
@@ -171,7 +177,7 @@ fn input_monitor_permission_status(
             keyboard_count: counts.keyboard_count,
             mouse_click_count: counts.mouse_click_count,
             last_event_unix_ms: counts.last_event_unix_ms,
-            message: input_monitor_permission_message(authorized, counts),
+            message: input_monitor_permission_message(authorized, counts, app_name),
         };
     }
 
@@ -222,9 +228,13 @@ fn windows_input_monitor_permission_message(counts: InputEventCounts) -> String 
 }
 
 #[cfg(target_os = "macos")]
-fn input_monitor_permission_message(authorized: bool, counts: InputEventCounts) -> String {
+fn input_monitor_permission_message(
+    authorized: bool,
+    counts: InputEventCounts,
+    app_name: &str,
+) -> String {
     if !authorized {
-        return "需要允许 Fate 监听输入事件".to_string();
+        return format!("需要允许 {app_name} 监听输入事件");
     }
     if counts.listener_active {
         return "已获得权限，正在监听键盘和鼠标点击".to_string();

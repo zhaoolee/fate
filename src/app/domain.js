@@ -570,7 +570,7 @@ export function activityBuckets(samples, hour, now = Date.now()) {
   const end = start + activityRingMs;
   const buckets = Array.from({ length: activitySegmentCount }, (_, index) => ({
     at: start + index * activitySampleMs,
-    state: "unknown",
+    state: start + index * activitySampleMs <= now ? "idle" : "future",
     keyboardCount: 0,
     mouseClickCount: 0
   }));
@@ -606,7 +606,11 @@ export function activityRingState(samples, hour, now = Date.now()) {
     if (state === "idle") idleCount += 1;
     const start = index * step;
     const end = (index + 1) * step;
-    const color = state === "active" ? "var(--gold)" : state === "idle" ? "var(--green)" : "var(--watch-ring-track)";
+    const color = state === "active"
+      ? "var(--gold)"
+      : state === "future"
+        ? "var(--watch-ring-track)"
+        : "var(--green)";
     const solidEnd = Math.max(start, end - gap);
     return [
       `${color} ${start.toFixed(2)}deg ${solidEnd.toFixed(2)}deg`,

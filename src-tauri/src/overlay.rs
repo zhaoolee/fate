@@ -6,7 +6,6 @@ use crate::activity::ActivitySnapshot;
 use crate::input::{input_event_counts, now_unix_ms, seconds_since_last_input};
 use crate::shared::{SharedInputCounts, SharedMonitor, SharedOverlayTip, SharedTips};
 
-const MAIN_WINDOW_BASE_TITLE: &str = "FATE精力管理";
 const OVERLAY_RATIO: f64 = 0.618;
 
 #[derive(Clone, Serialize)]
@@ -116,7 +115,7 @@ fn show_overlay_window(
     notes.push(format!("full url: {full_url}"));
 
     let build_result = WebviewWindowBuilder::new(app, label, overlay_url)
-        .title("Fate")
+        .title(app.package_info().name.as_str())
         .decorations(false)
         .transparent(true)
         .always_on_top(true)
@@ -177,8 +176,8 @@ pub fn destroy_overlay_windows<R: tauri::Runtime, M: Manager<R>>(manager: &M) {
     let _ = destroy_overlay_window(manager, "break-overlay-preview");
 }
 
-pub fn versioned_main_window_title(version: &str) -> String {
-    format!("{MAIN_WINDOW_BASE_TITLE} v{version}")
+pub fn versioned_main_window_title(app_name: &str, version: &str) -> String {
+    format!("{app_name}精力管理 v{version}")
 }
 
 fn set_break_overlay_tip(overlay_tip: &SharedOverlayTip, health_tips: &SharedTips) {
